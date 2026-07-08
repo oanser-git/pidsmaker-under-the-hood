@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+.env
+.env.*
+
+# Generated artifacts and scratch outputs
+artifacts/
+outputs/
+tmp/
+temp/
+
+# Large model/data binaries
+*.pkl
+*.pth
+*.pt
+*.npy
+*.npz
+*.zst
+*.tar
+*.tar.*
+*.zip
+
+# Logs and runtime files
+*.log
+wandb/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
