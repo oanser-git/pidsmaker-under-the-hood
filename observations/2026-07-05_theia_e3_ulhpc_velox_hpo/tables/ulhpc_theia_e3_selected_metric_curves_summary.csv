@@ -1,0 +1,3 @@
+model_label,exp,score_epoch,auc,ap,adp,attack_ids,nodes,malicious_nodes,benign_nodes,score_path,plot_png
+Leaky selected,velox_THEIA_E3_selected_w5_lr0001_h64_seed0,0,0.7498174623,0.1193690149,0.9999158228,2,700902,118,700784,inputs/ulhpc_theia_e3/leaky_selected/scores_model_epoch_0.pkl,observations/2026-07-05_theia_e3_ulhpc_velox_hpo/plots/leaky/from_saved_node_scores/theia_e3_ulhpc_leaky_selected_metric_curves.png
+Non-leaky selected,velox_THEIA_E3_nonleaky_selected_eval_epoch3,3,0.7041567923,0.0578140529,0.4999158228,2,700902,118,700784,inputs/ulhpc_theia_e3/nonleaky_selected/scores_model_epoch_3.pkl,observations/2026-07-05_theia_e3_ulhpc_velox_hpo/plots/non-leaky/from_saved_node_scores/theia_e3_ulhpc_nonleaky_selected_metric_curves.png

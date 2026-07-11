@@ -1,0 +1,8 @@
+node_group,type_pair,count,fraction
+TP_above_threshold,file->subject,23,1.000000000
+FP_above_threshold,file->subject,1082,1.000000000
+FN_below_threshold,file->subject,21,0.466666667
+FN_below_threshold,netflow->subject,14,0.311111111
+FN_below_threshold,subject->file,5,0.111111111
+FN_below_threshold,subject->netflow,5,0.111111111
+TN_high_below_threshold,file->subject,500,1.000000000

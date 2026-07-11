@@ -1,0 +1,20 @@
+metric,value
+dataset,optc_h051
+mode,--tuned --from_weights --restart_from_scratch
+total_scored_nodes,1470624
+benign_nodes,1470510
+malicious_nodes,114
+predicted_positives,0
+velox_threshold,22.605024338
+threshold_tp,0
+threshold_fp,0
+threshold_fn,114
+precision,0.000000
+recall,0.000000
+f1,0.000000
+auc,0.91974
+ap,0.00517
+adp,0.24996
+paper_reference_best_adp,1.00
+coverage,"coverage rank `3`, coverage score `16.262302399`, prefix TP/FP `1 / 2`, tie-inclusive TP/FP/FN `1 / 3 / 113`"
+caveat,Local ADP does not match the paper/reference best ADP for optc_h051.

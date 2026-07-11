@@ -1,0 +1,101 @@
+node_group,src_label,count,fraction
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | cscript ""C:/Windows/TEMP/myHbYXTpViwX.vbs""",29,0.254385965
+FN_below_threshold,subject: biguwcmnsucig.exe,10,0.087719298
+FN_below_threshold,subject: //?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe,6,0.052631579
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/SYSTEM32/cmd.exe,4,0.035087719
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/Explorer.EXE,3,0.026315789
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/system32/svchost.exe -k netsvcs,3,0.026315789
+FN_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Update/GoogleUpdate.exe,3,0.026315789
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe,3,0.026315789
+FN_below_threshold,netflow 53.192.68.50:58888->142.20.56.52:3389,2,0.017543860
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe,2,0.017543860
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad640CA.tmp/biGuWCmNsuCIG.exe,2,0.017543860
+FN_below_threshold,subject: wininit.exe,2,0.017543860
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe,2,0.017543860
+FN_below_threshold,subject: cmd.exe,2,0.017543860
+FN_below_threshold,subject: taskhostw.exe,2,0.017543860
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/radAF010.tmp/biGuWCmNsuCIG.exe,2,0.017543860
+FN_below_threshold,subject: taskhostw.exe | taskhostw.exe SYSTEM,1,0.008771930
+FN_below_threshold,subject: LogonUI.exe | wininit.exe,1,0.008771930
+FN_below_threshold,subject: %SystemRoot%/system32/csrss.exe | gpupdate.exe /target:user,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:58878->142.20.56.52:3389,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/System32/svchost.exe -k LocalSystemNetworkRestricted,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/services.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Explorer.EXE,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Users/dcoombes/Downloads/update.exe,1,0.008771930
+FN_below_threshold,subject: gpupdate.exe,1,0.008771930
+FN_below_threshold,subject: net1.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Chrome/Application/chrome.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Python27/python.EXE,1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe | schtasks  /delete /tn ""KickoffAutoLoginRandom"" /F",1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Common Files/Adobe/ARM/1.0/AdobeARM.exe,1,0.008771930
+FN_below_threshold,subject: sc.exe,1,0.008771930
+FN_below_threshold,subject: schtasks.exe,1,0.008771930
+FN_below_threshold,subject: gpupdate.exe | /??/C:/Windows/system32/conhost.exe 0xffffffff -ForceV1,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad1BA52.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad4F110.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad28DC8.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad77CFB.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad99E71.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad5446E.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad95EBC.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad9DD75.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad076F2.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/cmd.exe,1,0.008771930
+FN_below_threshold,subject: System,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/RunDll32.exe,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8080->142.20.56.52:49803,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8080->142.20.56.52:49886,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8080->142.20.56.52:50259,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8000->142.20.56.52:50252,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8000->142.20.56.52:50254,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8000->142.20.56.52:50253,1,0.008771930
+FN_below_threshold,netflow 53.192.68.50:8000->142.20.56.52:50251,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/windows/system32/scdeviceenum.dll,1,0.008771930
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/backgroundTaskHost.exe | ""C:/Windows/system32/backgroundTaskHost.exe"" -ServerName:CortanaUI.AppXy7vb4pc2dr3kc93kfc509b1d0arkfb2x.mca",103,0.206000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Program Files (x86)/Google/Chrome/Application/chrome.exe""",85,0.170000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe,41,0.082000000
+TN_high_below_threshold,subject: System,30,0.060000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Windows/SystemApps/Microsoft.Windows.Cortana_cw5n1h2txyewy/SearchUI.exe"" -ServerName:CortanaUI.AppXa50dqqa5gqv4a428c9y1jjw7m3btvepj.mca",28,0.056000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/backgroundTaskHost.exe,26,0.052000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/cmd.exe,13,0.026000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/SYSTEM32/cmd.exe | C:/Windows/SYSTEM32/cmd.exe /c ""C:/ncr/DeleteArchiveSecurity.bat""",10,0.020000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/DllHost.exe | C:/Windows/system32/DllHost.exe /Processid:{973D20D7-562D-44B9-B70B-5A0F49CCDF3F},9,0.018000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/SearchProtocolHost.exe | ""C:/Windows/system32/SearchProtocolHost.exe"" Global/UsGthrFltPipeMssGthrPipe191_ Global/UsGthrCtrlFltPipeMssGthrPipe191 1 -2147483646 ""Software/Microsoft/Windows Search"" ""Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)"" ""C:/ProgramData/Microsoft/Search/Data/Temp/usgthrsvc"" ""DownLevelDaemon"" ",8,0.016000000
+TN_high_below_threshold,subject: taskhostw.exe,8,0.016000000
+TN_high_below_threshold,"subject: PING.EXE | ""C:/Program Files (x86)/Microsoft Office/Office15/POWERPNT.EXE"" /AUTOMATION -Embedding",8,0.016000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/wbem/wmiprvse.exe | ""C:/Windows/SystemApps/ShellExperienceHost_cw5n1h2txyewy/ShellExperienceHost.exe"" -ServerName:App.AppXtk181tbxbce2qsex02s8tw7hfxa9xb3t.mca",8,0.016000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/SYSTEM32/cmd.exe,8,0.016000000
+TN_high_below_threshold,subject: taskhostw.exe | taskhostw.exe SYSTEM,7,0.014000000
+TN_high_below_threshold,subject: cmd.exe | cmd.exe  /c mstsc.exe /f /v:142.20.61.187:3389 ,7,0.014000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/SysNative/qwinsta.exe,7,0.014000000
+TN_high_below_threshold,subject: LogonUI.exe | wininit.exe,6,0.012000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | C:/Python27/python.exe ""c:/ncr/mantra/runtime/Scripts/mantra-script.py"" ""-d"" ""c:/ncr/mantra"" ""--random_startup"" ""0""",6,0.012000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Python27/python.exe ""c:/ncr/mantra/runtime/Scripts/mantra-script.py"" ""-d"" ""c:/ncr/mantra"" ""--random_startup"" ""0""",5,0.010000000
+TN_high_below_threshold,"subject: %SystemRoot%/system32/csrss.exe | ""//?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe"" -marionette -profile C:/Users/dcoombes/AppData/Local/Temp/rust_mozprofile.Axc93WYyxSE9",5,0.010000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/wbem/wmiprvse.exe | ""C:/Windows/SystemApps/Microsoft.Windows.Cortana_cw5n1h2txyewy/SearchUI.exe"" -ServerName:CortanaUI.AppXa50dqqa5gqv4a428c9y1jjw7m3btvepj.mca",5,0.010000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/wbem/wmiprvse.exe | C:/Windows/system32/DllHost.exe /Processid:{973D20D7-562D-44B9-B70B-5A0F49CCDF3F},4,0.008000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/Explorer.EXE,4,0.008000000
+TN_high_below_threshold,subject: taskhostw.exe | taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E},4,0.008000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/svchost.exe | C:/Windows/System32/svchost.exe -k wsappx,4,0.008000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | ""C:/Windows/system32/backgroundTaskHost.exe"" -ServerName:CortanaUI.AppXy7vb4pc2dr3kc93kfc509b1d0arkfb2x.mca",3,0.006000000
+TN_high_below_threshold,"subject: taskkill.exe | ""C:/Users/dcoombes/AppData/Local/Microsoft/OneDrive/OneDrive.exe"" /background",3,0.006000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/wbem/wmiprvse.exe | ""C:/Program Files/WindowsApps/Microsoft.SkypeApp_11.8.204.0_x64__kzf8qxf38zg5c/SkypeHost.exe"" -ServerName:SkypeHost.ServerServer",3,0.006000000
+TN_high_below_threshold,"subject: rundll32.exe | ""C:/Windows/SysWOW64/OneDriveSetup.exe"" /thfirstsetup",3,0.006000000
+TN_high_below_threshold,subject: gpupdate.exe,3,0.006000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/SettingSyncHost.exe | C:/Windows/system32/SettingSyncHost.exe -Embedding,3,0.006000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/system32/svchost.exe -k appmodel,3,0.006000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/SysWOW64/OneDriveSetup.exe,3,0.006000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/OneDrive.exe | ""C:/Users/dcoombes/AppData/Local/Microsoft/OneDrive/OneDrive.exe"" /background",3,0.006000000
+TN_high_below_threshold,subject: LogonUI.exe,3,0.006000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/services.exe,2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/system32/svchost.exe -k LocalServiceNoNetwork,2,0.004000000
+TN_high_below_threshold,subject: taskkill.exe | mstsc.exe  /f /v:142.20.61.193:3389 ,2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/compattelrunner.exe | C:/Windows/system32/compattelrunner.exe -m:GeneralTel.dll -f:RunGeneralTelemetry  -cV l7n8Mlwqc0WxrCC9.1.1 -SendFullTelemetry -ThrottleUtc,2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/compattelrunner.exe | C:/Windows/system32/compattelrunner.exe -m:GeneralTel.dll -f:RunGeneralTelemetry  -cV sBzjsw7P+EGjeKPX.1.1 -SendFullTelemetry -ThrottleUtc,2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/SYSTEM32/cmd.exe /c ""C:/ncr/DeleteArchiveSecurity.bat""",2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/compattelrunner.exe | C:/Windows/system32/compattelrunner.exe -m:GeneralTel.dll -f:RunGeneralTelemetry  -cV spt0U5C+1keqAYZC.1.1 -SendFullTelemetry -ThrottleUtc,2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Microsoft.NET/Framework64/v4.0.30319/ngen.exe | ""C:/Windows/Microsoft.NET/Framework64/v4.0.30319/ngen.exe"" install ""Microsoft.PowerShell.Commands.Utility, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"" /NoDependencies /noroot /version:v4.0.30319 /LegacyServiceBehavior",2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Microsoft.NET/Framework64/v4.0.30319/ngen.exe | ""C:/Windows/Microsoft.NET/Framework64/v4.0.30319/ngen.exe"" install ""System.Dynamic, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"" /NoDependencies /noroot /version:v4.0.30319 /LegacyServiceBehavior",2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe,2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | C:/Windows/SYSTEM32/cmd.exe /c ""C:/ncr/DeleteArchiveSecurity.bat""",1,0.002000000

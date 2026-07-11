@@ -1,0 +1,26 @@
+model_label,node_group,node_group_label,operation,type_pair,count,fraction
+Leaky selected,TP,TP,EVENT_EXECUTE,file->subject,8,1.000000
+Leaky selected,FP,FP,EVENT_READ,file->subject,8,1.000000
+Leaky selected,FN,FN,EVENT_SENDTO,subject->netflow,75,0.681818
+Leaky selected,FN,FN,EVENT_EXECUTE,file->subject,15,0.136364
+Leaky selected,FN,FN,EVENT_READ,file->subject,13,0.118182
+Leaky selected,FN,FN,EVENT_OPEN,file->subject,4,0.036364
+Leaky selected,FN,FN,EVENT_RECVFROM,netflow->subject,2,0.018182
+Leaky selected,FN,FN,EVENT_SENDMSG,subject->netflow,1,0.009091
+Leaky selected,TN_near_threshold,TN (benign) near threshold,EVENT_EXECUTE,file->subject,451,0.902000
+Leaky selected,TN_near_threshold,TN (benign) near threshold,EVENT_RECVMSG,netflow->subject,47,0.094000
+Leaky selected,TN_near_threshold,TN (benign) near threshold,EVENT_SENDMSG,subject->netflow,2,0.004000
+Non-leaky selected,TP,TP,EVENT_EXECUTE,file->subject,18,1.000000
+Non-leaky selected,FP,FP,EVENT_EXECUTE,file->subject,448,0.965517
+Non-leaky selected,FP,FP,EVENT_READ,file->subject,13,0.028017
+Non-leaky selected,FP,FP,EVENT_CLONE,subject->subject,2,0.004310
+Non-leaky selected,FP,FP,EVENT_WRITE,subject->file,1,0.002155
+Non-leaky selected,FN,FN,EVENT_SENDTO,subject->netflow,56,0.560000
+Non-leaky selected,FN,FN,EVENT_READ,file->subject,25,0.250000
+Non-leaky selected,FN,FN,EVENT_CONNECT,subject->netflow,6,0.060000
+Non-leaky selected,FN,FN,EVENT_CLONE,subject->subject,5,0.050000
+Non-leaky selected,FN,FN,EVENT_OPEN,file->subject,4,0.040000
+Non-leaky selected,FN,FN,EVENT_EXECUTE,file->subject,2,0.020000
+Non-leaky selected,FN,FN,EVENT_RECVFROM,netflow->subject,2,0.020000
+Non-leaky selected,TN_near_threshold,TN (benign) near threshold,EVENT_READ,file->subject,305,0.610000
+Non-leaky selected,TN_near_threshold,TN (benign) near threshold,EVENT_EXECUTE,file->subject,195,0.390000

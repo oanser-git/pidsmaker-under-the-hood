@@ -1,0 +1,19 @@
+metric,value
+dataset,CADETS_E3
+mode,--tuned --from_weights --restart_from_scratch
+total_scored_nodes,281585
+benign_nodes,281517
+malicious_nodes,68
+predicted_positives,1105
+velox_threshold,9.821475983
+threshold_tp,23
+threshold_fp,1082
+threshold_fn,45
+precision,0.020814
+recall,0.338235
+f1,0.039216
+auc,0.78092
+ap,0.30906
+adp,0.99989
+paper_reference_best_adp,1.00
+coverage,"coverage rank `8`, coverage score `16.527528763`, prefix TP/FP `8 / 0`, tie-inclusive TP/FP/FN `15 / 0 / 53`"

@@ -1,0 +1,2 @@
+attack_slug,attack_name,start_time,end_time,gt_node_rows,unique_gt_nodes,total_window_events,events_incident_to_gt,events_both_endpoints_gt,distinct_src_nodes_incident,distinct_dst_nodes_incident
+firefox_backdoor_drakon_in_memory,Firefox Backdoor Drakon In-Memory,2018-04-10 14:30:00,2018-04-10 15:00:00,58,58,223029,80997,25215,1540,1119

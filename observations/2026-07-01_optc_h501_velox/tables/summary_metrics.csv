@@ -1,0 +1,19 @@
+metric,value
+dataset,optc_h501
+mode,--tuned --from_weights --restart_from_scratch
+total_scored_nodes,1489198
+benign_nodes,1488449
+malicious_nodes,749
+predicted_positives,2
+velox_threshold,5.698988914
+threshold_tp,1
+threshold_fp,1
+threshold_fn,748
+precision,0.500000
+recall,0.001335
+f1,0.002663
+auc,0.60128
+ap,0.00168
+adp,0.49989
+paper_reference_best_adp,0.50
+coverage,"coverage rank `2`, coverage score `5.713635445`, prefix TP/FP `1 / 1`, tie-inclusive TP/FP/FN `1 / 1 / 748`"

@@ -1,0 +1,14 @@
+node_group,operation,count,fraction
+TP_above_threshold,EVENT_EXECUTE,21,0.913043478
+TP_above_threshold,EVENT_RECVMSG,2,0.086956522
+FP_above_threshold,EVENT_RECVMSG,1079,0.997227357
+FP_above_threshold,EVENT_EXECUTE,3,0.002772643
+FN_below_threshold,EVENT_OPEN,16,0.355555556
+FN_below_threshold,EVENT_RECVFROM,14,0.311111111
+FN_below_threshold,EVENT_CONNECT,5,0.111111111
+FN_below_threshold,EVENT_EXECUTE,3,0.066666667
+FN_below_threshold,EVENT_WRITE,3,0.066666667
+FN_below_threshold,EVENT_SENDMSG,2,0.044444444
+FN_below_threshold,EVENT_READ,2,0.044444444
+TN_high_below_threshold,EVENT_EXECUTE,491,0.982000000
+TN_high_below_threshold,EVENT_RECVFROM,9,0.018000000

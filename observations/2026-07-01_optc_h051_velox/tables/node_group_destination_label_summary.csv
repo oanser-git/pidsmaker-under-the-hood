@@ -1,0 +1,470 @@
+node_group,dst_label,count,fraction
+FN_below_threshold,subject: //?/C:/Program Files (x86)/Mozilla Firefox/firefox.exe,7,0.061403509
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe,3,0.026315789
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe,3,0.026315789
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/conhost.exe | /??/C:/Windows/system32/conhost.exe 0xffffffff -ForceV1,2,0.017543860
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Users/dcoombes/AppData/Local/Temp/cKfGW.exe"" ",2,0.017543860
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Users/dcoombes/Downloads/update.exe | ""C:/Users/dcoombes/Downloads/update.exe"" ",2,0.017543860
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""C:/Windows/Temp/rad0C463.tmp/biGuWCmNsuCIG.exe"" ",2,0.017543860
+FN_below_threshold,netflow 142.20.56.52:49817->53.192.68.50:8080,2,0.017543860
+FN_below_threshold,node 50665,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/$Recycle.Bin/S-1-5-21-4190936083-3304963419-1584388968-3196/$RCA75WE.exe,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/winevt/Logs/Microsoft-Windows-TaskScheduler%4Operational.evtx,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/ncr/kickoff/input/usernames.csv,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/services.exe | C:/Windows/System32/svchost.exe -k wsappx,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/Windows/Logs/WindowsUpdate/WindowsUpdate.20190922.014734.126.1.etl,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/SYSTEM32/cmd.exe | gpupdate.exe /target:computer,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/SYSTEM32/cmd.exe,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/Downloads/update.exe,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/Windows/Temp/rad0F93B.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: gpupdate.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Users/dcoombes/Downloads/update.exe,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/Python27/Lib/site-packages/enum34-1.1.6-py2.7.egg,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/radC5EB1.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad95EBC.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad9DD75.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad77CFB.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad5446E.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad076F2.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad99E71.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad1BA52.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad4F110.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/rad28DC8.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/Temp/radCBB57.tmp/biGuWCmNsuCIG.exe,1,0.008771930
+FN_below_threshold,subject: sc.exe,1,0.008771930
+FN_below_threshold,subject: %SystemRoot%/system32/csrss.exe,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/Downloads/update.exe:Zone.Identifier,1,0.008771930
+FN_below_threshold,subject: cmd.exe,1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/radD85FE.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/radD85FE.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad20015.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad20015.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad9FAD6.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad9FAD6.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/radC50E7.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/radC50E7.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad838E6.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad838E6.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad1CC6C.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad1CC6C.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad71B66.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad71B66.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/radE1BA0.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/radE1BA0.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad41041.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad41041.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad38E8A.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad38E8A.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/radB895D.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/radB895D.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/radEB31A.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/radEB31A.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad0F93B.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad0F93B.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad1C3A2.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad1C3A2.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad54E46.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad54E46.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/Temp/rad231B5.tmp/biGuWCmNsuCIG.exe | ""C:/Windows/Temp/rad231B5.tmp/biGuWCmNsuCIG.exe"" ",1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49846->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe | schtasks  /delete /tn ""KickoffAutoLoginRandom"" /F",1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49880->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49876->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Update/GoogleUpdate.exe,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49836->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49814->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49886->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49803->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:50259->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49837->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,subject: gpupdate.exe | /??/C:/Windows/system32/conhost.exe 0xffffffff -ForceV1,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:50254->53.192.68.50:8000,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:50252->53.192.68.50:8000,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:50253->53.192.68.50:8000,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:50251->53.192.68.50:8000,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49870->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49847->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49844->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49882->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49872->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49840->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49835->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49831->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49829->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49816->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49838->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49843->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49842->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49828->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49883->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49879->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49878->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49877->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49871->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49839->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49815->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49873->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49833->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:49812->53.192.68.50:8080,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:3389->53.192.68.50:58888,1,0.008771930
+FN_below_threshold,netflow 142.20.56.52:3389->53.192.68.50:58878,1,0.008771930
+FN_below_threshold,file: /Device/HarddiskVolume1/$Extend/$UsnJrnl:$J,1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe | C:/Windows/system32/RunDll32.exe C:/Windows/system32/migration/WininetPlugin.dll,MigrateCacheForUser /m /0",1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe | winlogon.exe,1,0.008771930
+FN_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe | ""C:/Windows/SysWOW64/OneDriveSetup.exe"" C:/Windows/SysWOW64/OneDriveSetup.exe /uninstall  /permachine  /silent  /childprocess /cusid:S-1-5-18 ",1,0.008771930
+FN_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | C:/Windows/System32/svchost.exe -k LocalSystemNetworkRestricted,1,0.008771930
+TN_high_below_threshold,file: /Device/HarddiskVolume1/WINDOWS/SERVICEPROFILES/LOCALSERVICE/APPDATA/LOCAL/FONTCACHE/~FONTCACHE-S-1-5-18.DAT,11,0.022000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/kickoff/input/usernames.csv,7,0.014000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/WDI/LogFiles/SecondaryLogonCKCL.etl,5,0.010000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/microsoft.windows.cortana_cw5n1h2txyewy/AC/Microsoft/Internet Explorer/DOMStore/KI98MCVG/www.bing[1].xml,5,0.010000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/system32/config/systemprofile/AppData/LocalLow/Microsoft/CryptnetUrlCache/Content/CE9BBF0C72D6E55BD499A1C5FB58DB25,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/~WRD0000.tmp,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/system32/WDI/LogFiles/SecondaryLogonCKCL.etl,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/RtBackup/EtwRTrundownCollector.etl,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/Temp/Switches.xml,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy/Settings/settings.dat.LOG1,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/Microsoft.NET/ngennicupdatelock.dat,4,0.008000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/UPPS/UPPS.bin,4,0.008000000
+TN_high_below_threshold,node 50665,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/AppData/Indexed DB/edb00007.log,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/system32/WDI/LogFiles/ShutdownCKCL.etl,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/RtBackup/EtwRTMsULtrace.etl,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/RtBackup/EtwRTMSNT_SystemTrace.etl,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SoftwareDistribution/DataStore/Logs/edb.log,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/PROGRAMDATA/USOPRIVATE/UPDATESTORE/UPDATESTORE51B519D5-B6F5-4333-8DF6-E74D7C9AEAD4.XML,3,0.006000000
+TN_high_below_threshold,file: /Device/Mup/TSCLIENT/SCARD/2,3,0.006000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/TraceArchive.6816.0313-45.etl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132139070641515866.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132136946180690686.txt~RFc76069b.TMP,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/system32/config/systemprofile/AppData/LocalLow/Microsoft/CryptnetUrlCache/MetaData/CE9BBF0C72D6E55BD499A1C5FB58DB25,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138911660413988.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138680826299473.txt.~tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138536786420275.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138248884487682.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137528985752616.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137377560930911.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137093017101800.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137957003480841.txt.~tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/AppData/Indexed DB/edb0000E.log,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/WINDOWS/Security/Database/edbtmp.log,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/History/History.IE5/MSHist012019092320190924/container.dat,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ProgramData/Microsoft/Windows/Power Efficiency Diagnostics/energy-report-2019-09-25.xml,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ProgramData/Microsoft/Windows/Power Efficiency Diagnostics/energy-report-2019-09-24.xml,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/Preferences,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ProgramData/Microsoft/Windows/Power Efficiency Diagnostics/energy-trace.etl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SysWOW64/config/systemprofile/AppData/Local/Microsoft/Windows Live/Bici/EmptyOptIn.sqm,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/WINDOWS/SYSTEM32/SRU/SRUTMP.LOG,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/AppData/Indexed DB/edb00005.log,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/WINDOWS/SERVICEPROFILES/LOCALSERVICE/APPDATA/LOCAL/FONTCACHE/~FONTCACHE-S-1-5-21-4190936083-3304963419-1584388968-3196.DAT,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/system32/config/systemprofile/AppData/Local/Microsoft/Windows/INetCache/IE/IDR_XML_DEFAULT_TRANSFORM[1],2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/USERS/DCOOMBES/APPDATA/LOCAL/PACKAGES/MICROSOFT.WINDOWS.CORTANA_CW5N1H2TXYEWY/APPDATA/INDEXED DB/EDBTMP.LOG,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/AppData/Indexed DB/edb00008.log,2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Program Files (x86)/Google/Update/GoogleUpdate.exe | ""fontdrvhost.exe""",2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/users/dcoombes/appdata/local/temp/tmpvawp_g,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/users/dcoombes/appdata/local/temp/tmphjsttg,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/TraceArchive.6816.0313-39.etl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/DiagOutputDir/SkypeHost-11.8.204.0-002.etl,2,0.004000000
+TN_high_below_threshold,"subject: /Device/HarddiskVolume1/Windows/system32/svchost.exe | ""fontdrvhost.exe""",2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/RtBackup/EtwRTDiagtrack-Listener.etl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Microsoft/Windows Live/Bici/_00.sqm,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt4B65.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/LwtNetLog.etl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/IE,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/RtBackup/EtwRTMsDiagProv.etl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Terminal Server Client/Cache,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Microsoft/Windows/SettingSync/metastore/edb.log,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/TileDataLayer/Database/EDBtmp.log,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy/Settings/settings.dat,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/Majesty-Insurance.pptx,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/Framework-Board-Jury-Ver41.docx,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/pptB5C6.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/pptE38.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132139080280424162.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/INTERVIEW_HOSPITAL.docx,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/SyncEngine-2019-9-23.525.5148.1.odl,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy/Settings/settings.dat.LOG2,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/Defendant Besiege.docx,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt2275.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/TEMP/Switches.xml,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/rust_mozprofile.Axc93WYyxSE9/datareporting/session-state.json.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/W1K27SDJNMLTGHF6VMBO.temp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt8C60.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/~WRD0001.tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/TARGET_OBJECTION.docx,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137240194946089.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138078492302138.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138824792062006.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138392796647054.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138104861693330.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138964855368163.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137668997414256.txt.~tmp,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137810146897918.txt,2,0.004000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132139070710112134.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132139070710112134.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132139070641515866.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132136946180690686.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/Facility_Ally_Sentence.docx,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138911660413988.txt~RF337ca.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138680826299473.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138536786420275.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138248884487682.txt~RF10597e5.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137528985752616.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137377560930911.txt~RFf084142.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137957003480841.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/CVR66B0.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/mantra/runtime/Lib/site-packages/reportlab-3.3.0-py2.7.egg/reportlab/pdfbase/_fontdata_widths_courieroblique.py,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/mantra/runtime/Lib/site-packages/reportlab-3.3.0-py2.7.egg/reportlab/pdfbase/_fontdata_widths_timesbold.py,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/mantra/runtime/Lib/site-packages/reportlab-3.3.0-py2.7.egg/reportlab/pdfbase/_fontdata_widths_courier.py,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/mantra/runtime/Lib/site-packages/reportlab-3.3.0-py2.7.egg/reportlab/pdfbase/_fontdata_enc_macexpert.py,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/mantra/runtime/Lib/site-packages/reportlab-3.3.0-py2.7.egg/reportlab/pdfbase/_fontdata_enc_zapfdingbats.py,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/mantra/runtime/Lib/site-packages/reportlab-3.3.0-py2.7.egg/reportlab/pdfgen/textobject.py,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SysWOW64/config/systemprofile/AppData/Local/Microsoft/Windows Live/Bici/_16.sqm,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/pptD78.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/$Recycle.Bin/S-1-5-21-4190936083-3304963419-1584388968-3196/$RCA75WE.exe,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/F8FE.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/JumpListIconsOld,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/JumpListIcons,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/DC0F.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/B587.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/~$PERFORMANCE_DEPRESSION_LEAVE.pptx,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/USERS/DCOOMBES/APPDATA/LOCAL/PACKAGES/MICROSOFT.WINDOWS.CORTANA_CW5N1H2TXYEWY/APPDATA/INDEXED DB/EDB.LOG,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/AppData/Indexed DB/edb00006.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/Content.MSO/979823DE.jpg,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/Content.MSO/9BC79111.jpg,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/Content.MSO/48702150.jpg,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/Content.MSO/9C04B872.jpg,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/TraceCurrent.6816.0313.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Roaming/Microsoft/Office/Recent/index.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/5d696d521de238c3.customDestinations-ms,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/Google Profile.ico,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/vfieg4,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/users/dcoombes/appdata/local/temp/tmpvawp_g/user.js,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/pnxtov,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/users/dcoombes/appdata/local/temp/tmphjsttg/user.js,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/DiagOutputDir/SkypeHost-11.8.204.0-001.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/ContentManagementSDK/Creatives/onesettings_waas_featuremanagement/eventbeacons.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/ContentManagementSDK/Creatives/243289/imprbeacons.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/ContentManagementSDK/Creatives/279978/imprbeacons.dat,1,0.002000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/services.exe,1,0.002000000
+TN_high_below_threshold,subject: /Device/HarddiskVolume1/Windows/system32/lsass.exe,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Microsoft/Windows Live/Bici/EmptyOptIn.sqm,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/ContentManagementSDK/Creatives/296333/eventbeacons.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/ContentManagementSDK/Creatives/279986/imprbeacons.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/WDI/LogFiles/ShutdownCKCL.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/Content.Word/~WRF{9FAD85C6-EBF1-4E79-8E91-D29619EFC1B7}.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/Content.Word/~WRS{340F2F55-0712-4A08-955D-A27B8683B648}.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/setup/logs/Update_2019-09-21_175213_1668-1294.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/LogFiles/WMI/Wifi.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/Extension Rules/000001.dbtmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Default/Session Storage/000001.dbtmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/TraceArchive.6816.0313-42.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/SyncEngine-2019-9-22.1054.3432.1.odl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SysWOW64/config/systemprofile/AppData/Local/Microsoft/OneDrive/setup/logs/Uninstall-PerMachine_2019-09-23_053303_15e4-ad4.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SysWOW64/config/systemprofile/AppData/Local/Microsoft/OneDrive/setup/logs/Uninstall_2019-09-23_044932_16a8-2e4.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SysWOW64/config/systemprofile/AppData/Local/Microsoft/OneDrive/setup/logs/Uninstall-PerUser_2019-09-23_044943_34c-1644.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/SoftwareDistribution/DataStore/Logs/edbtmp.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/setup/logs/Update_2019-09-24_101106_1458-145c.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/appssynonyms.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{00a91c09-52d8-46cc-aa3a-cd84a3e79ab1}/0.1.filtertrie.intermediate.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{8f342d77-a894-4ca1-b33c-667554ee345a}/0.1.filtertrie.intermediate.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{00a91c09-52d8-46cc-aa3a-cd84a3e79ab1}/Apps.index,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{8f342d77-a894-4ca1-b33c-667554ee345a}/Apps.index,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{00a91c09-52d8-46cc-aa3a-cd84a3e79ab1}/0.0.filtertrie.intermediate.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{8f342d77-a894-4ca1-b33c-667554ee345a}/0.0.filtertrie.intermediate.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{8f342d77-a894-4ca1-b33c-667554ee345a}/0.2.filtertrie.intermediate.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{00a91c09-52d8-46cc-aa3a-cd84a3e79ab1}/0.2.filtertrie.intermediate.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/SyncEngine-2019-9-24.1410.5208.1.aodl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{00a91c09-52d8-46cc-aa3a-cd84a3e79ab1},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{8f342d77-a894-4ca1-b33c-667554ee345a},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/TileDataLayer/Database/EDB.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{00a91c09-52d8-46cc-aa3a-cd84a3e79ab1}/Apps.ft,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Apps_{8f342d77-a894-4ca1-b33c-667554ee345a}/Apps.ft,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Microsoft/Windows/SettingSync/metastore/edbtmp.log,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/pptE8C1.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt4387.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt2A7A.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt29BE.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/Temp/tmpB32B.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt6069.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt5E26.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt3180.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ReceiptMarketV.26.pptx,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/Local State,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132139080280424162.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/OneDrive/logs/Personal/TraceArchive.6816.0313-41.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/Settings/settings.dat.LOG2,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/LEGISLATION LEAVE TEXT V.33.pptx,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/DC10.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/A3AE.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/F99C.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/B72E.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/7B9C.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Google/Chrome/User Data/FA5.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/ZL52FAXBFSN9OYEQ1KGI.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/SA86BR6MGXSSE97CQLZR.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/IWT1UNE3BQHNXL9UMGSG.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/1DWETJYJ7Z5KFVKKZME1.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/UIXIQR1X3JFUFX771W4Q.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/Q0AMK2JPS3XYZFONW8HL.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/IGJG6YGEHBVVLXZLI5JY.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/SXURUNC91WCB8ZN1HDKX.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/DQPHD85SQ4HLYG8NRCL4.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/U8275FKMZCC2RK05RXU0.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/SLKJS2U0T7XWD66QZY13.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/0GSVM7C7MLZ4JIITRENM.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/SMEJFFUAEDGNLBY782RD.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/Z3HD4MHYLX74RJ5JKG1K.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/8EQC6M7RDHCVLQHV8VYC.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/1T9SRDEFW8IOVTI2ELUQ.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/PEWKGISCHMJ1MC8IVK46.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/BBIDAPK12ZOGKKJ5PRFO.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/F0AR7RVYLT7XDNLVISBP.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/B99EURR1CZ7U606GVWLM.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/BKFBL0DDMO852JGTW4VJ.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/7YXH5JCXGJUPNI6777I3.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/DUWYBB4DLMBXQAS30BF9.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/CN1Y84MD6J3DP03RBVG9.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/OQ2AFMW5O0F2IMQG2Y9J.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/EN85K2844OVWXM0LRRS2.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/CB1I31RVA0M3NV2MDRLD.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/ZO47OV9X5OHKMCXRLBM9.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/S82O042ZC4I69RWQGHNJ.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/SBO2V57ZQC2W62RKI00V.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/DFWXUFFHFJMOXBBUAS7B.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/JRC7V8VU6O40WMK0IXSN.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/TSPSPTFDXSJNG4VWP9I8.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/5d696d521de238c3.customDestinations-ms~RF1028ff4.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/471N7VKQ6AIIDZ3WLJJP.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/ZO9OECRO13VAG9HB6A0C.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/OWHSR5G5XDIFC823GIMW.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/RYETKFS2F9B2TH25P41I.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/9AJAP9PXZA6N031T1IBB.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/5d696d521de238c3.customDestinations-ms~RFfdfc33.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/VBBMEAOP23QCURPII7UE.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/BWQTS5QJ293H9RJ635TE.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/MMTLSN14I4J19YOX1DQ8.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/H57PGL1F7D7T6048MXDC.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/AUHDT2AIZLCPEICO1CQR.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/EU4QLA8SCXH4MFFI7XHH.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/RJEP43N95TWR01W3S3HO.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/F5UTJUTZJYVH74QOO9ZS.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/5d696d521de238c3.customDestinations-ms~RFfbb2e0.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/CQSIDFFBO42WJCND9QIN.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/6TAQ768UOMFBQZMVLNZO.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/LJTVY4SR3PBSDFPF54PD.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/D59C9FMZHJVYGW1PCXNF.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/JKHAVSJKVL605EES5W08.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/LW829BVDGAKINQMQ9133.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/1J8QHKTE75R3KI8YU3VL.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/I877D3S306YHGWZXE55M.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/S2FK4OBB0YV4P1RU3TC6.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/1SMI9TGPLPKXSYZ8HPFM.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/AJ9OYTZF6MHQCGJU03TN.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/N5ULZX9JM0N59U3DMAND.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/WRC653X1FQAD0DWO0ELB.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/5d696d521de238c3.customDestinations-ms~RFf71df6.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/AV9F33P4QR02ZFLOYC7U.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/557Y4EAW666W5RA4XYMF.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/JCFK54EYZITGWTLKMJ4Z.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Python27/Lib/site-packages/win32com/gen_py/dicts.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt2525.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/8502E606.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/IE/J76G5JMB,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Microsoft/Windows/INetCache/IE/PP2GQAUV,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/rust_mozprofile.Axc93WYyxSE9/datareporting/aborted-session-ping.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/rust_mozprofile.Axc93WYyxSE9/datareporting/aborted-session-ping,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Python27/lib/site-packages/win32com/gen_py/dicts.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Roaming/Microsoft/Windows/Recent/CustomDestinations/NN2ESZFNZKJQK32VK878.temp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Temp/rust_mozprofile.Axc93WYyxSE9/datareporting/state.json.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/APPEARANCE-PLANE.pptx,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/E02DA8C0.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt2006.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/ppt1F4A.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/documents/pptE38C.tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/microsoft.windows.cortana_cw5n1h2txyewy/AC/AppCache/E7Q7XI8V/container.dat,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/System32/DriverStore/FileRepository/msdv.inf_amd64_c5a71baf59134779,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/ncr/kickoff/ncr_utilities/file_handler.py,1,0.002000000
+TN_high_below_threshold,file: /Device/Mup/;LanmanRedirector/;V:000000000495322f/142.20.61.136/share/Zmv N Zibwg.pdf,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Windows/Logs/WindowsUpdate/WindowsUpdate.20190921.084040.224.1.etl,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/settingssynonyms.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/settingsconversions.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/settings.schema,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/settings.csg,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/appsconversions.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/apps.schema,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/apps.csg,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/settingsglobals.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/ConstraintIndex/Input_{896bdece-93df-41be-83be-404ed129b228}/appsglobals.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138078492302138.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138824792062006.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138392796647054.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138104861693330.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132138964855368163.txt.~tmp,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137668997414256.txt,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/dcoombes/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/DeviceSearchCache/AppCache132137810146897918.txt~RF119c406d.TMP,1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{F3FE1EAE-25DC-4395-B56A-BE525ADF1734},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E5F7E347-7AD2-4B77-B729-5FA13B636C45},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{F52F0F99-9EAC-4117-94F8-B555FCDF7587},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{F6AF3FE1-06BF-48A1-B327-A73F98C36C04},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{F22DC0CC-D8C0-4808-809B-561783A15590},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{F9F47CEA-E398-45F1-A85D-0D9C9A0B9CAE},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{FF69E838-2854-4497-B3B9-5BD0179DCB59},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{FDF8573B-DA74-4897-85FA-B663541F8083},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{EC3DBBA6-6F0E-465E-8697-42C2DFE6937A},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E8F51F00-98BA-4611-ADAD-60196142CFC1},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E12388D3-B41C-4406-858F-F748943F106E},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{D4570BEB-DACC-43B9-8AE7-EBCD4ABE0E70},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{D816F327-2C7C-4E60-BB32-AF2FA6499806},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{ED9A3F47-E0FD-4C3F-9E74-44839C868539},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E5701427-761E-45AC-BD27-78A849338189},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{BD3A6B3D-BA0D-4873-B7CD-E33D0548A625},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{D97826CB-23BB-4ACB-9B4A-EDE4B5D58B4D},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{DFAF800F-867D-42E7-B859-4BEB2718ECD5},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{D7DB880A-50F0-4458-A6AB-C57976E6047B},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E14CE2C9-D1C5-4964-ABC3-AD69506A16CD},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E45450BD-B789-4038-8185-0F71D3A662D9},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{B76F0FDE-41B8-4155-BA4E-5A7FE58F0BEE},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{CCAC65F4-4249-4653-8CAF-F4D2C54DF3C8},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{CCCCE75C-AFF6-496B-921A-45A4A2B525B0},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{CFF0C9C0-B31B-432B-A34C-7EE43C958A3E},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{CFE8ADB3-1864-43DE-99B9-4884FC43BE22},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{C6B4B763-83F9-4F7B-899E-147BFE01109B},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{C7F589A7-4EE4-4E72-A3E5-D6C743A20426},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{CA0A7146-6777-4186-8B70-C4051D3BE079},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{C3BA9E7E-99B1-49A4-96D0-DC6BE283C45E},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{C813D81E-0F81-4C3C-9536-70D4511F3236},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{9AACE682-CC7C-4288-8991-ECF638729489},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{930A78E1-7056-4C14-8FFC-F5192BE3A4B4},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{ABDA1995-22CA-453D-B0DB-C6456EBFFE4B},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{B16D3B8D-1980-42E9-B39E-E301F0AF1D9F},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{A128F6AE-23DF-404E-BAAE-B2391A589283},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{9BFB9B6F-EEA1-410C-B7F4-7F4829D470E0},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{B24053B2-375C-4626-9130-92C29C522630},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{A4E41F5F-6371-4704-ACF1-3536BDB92BCA},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{B3B3835A-773C-4AA9-A7A0-820717604402},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{A889D071-5B44-4953-B2FD-10AD6BFF9583},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{A0107FD0-10F6-4072-A70B-7B9B9C851E10},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{894E632C-FE24-4B5B-9DB1-9B6F0CB3CB54},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{9540807E-FD12-4809-8A5F-56455E594FD3},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{865010F1-13A9-49F8-B848-D7640563211F},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{8D2AFC5B-934E-4233-9C55-A2F0B6EC0F4E},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{8F180108-ECA3-49D7-8E60-9C7E97735681},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{8623862B-2C6C-47D4-9F85-F9496A48DDDC},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{85113DFF-6045-48E0-9E9E-0FC4F9056F85},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{70ED53F3-D647-45BB-ACA8-15E2B5E5A1DA},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{7AE65834-F06C-45C1-B781-9FB2BF12FB1F},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{83012312-9C30-40B1-A354-47ACCD5A6BF1},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{7E6F9F71-AE51-4EDE-8178-75FB448B1AB1},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{7BF2C773-43DE-414A-9A94-87EDB31194AC},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{787EE54E-6397-4DB3-A425-F73C80AB56FF},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{716FB7A0-8D1C-443A-8D52-E6532214BF40},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{8490FD2D-37E5-4470-B18A-7391116DC195},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{834FD509-460A-4382-8037-01F8F0047C68},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{7CBBA6E0-D86B-4890-9B3A-5E9A73FAB8D1},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{74AF58CD-9F28-407B-B88D-A08FD5D9FC70},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{5C53AE69-1EC0-4357-80F6-5EEB0E58AED0},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{69BAAC8A-158D-4B6B-9684-6F4D3AF2101D},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{6FE47D58-EB2D-4302-9B7E-9F3E6FB1AC62},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E5250B3E-ECB8-40F3-81E2-8CFA9DB1DCF2},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{60A7366B-1CB4-4C26-BB15-7402D5EA0F65},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{5F23E3A3-6D8E-4D73-BA88-BF4A70F38ABF},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{5D07DB35-FB13-472B-BC17-38F968805EF8},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{E356BB33-C0DD-40FA-8ADD-EC3034B12D1F},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{68F46EF9-B945-411F-AE40-F90AC69DF298},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{71697639-BB4D-4601-BD78-79B536B36943},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{6B3D9095-EC13-4A20-8860-327406AF0C11},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{58E0CAD3-B599-4331-833E-E34CFB2D2C11},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{5AE41935-5A8B-4D35-9446-DA3020137A7F},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{59CF2AAF-AF77-44FD-8F7D-E655D8E987EE},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{562FCF38-F5B0-4A9E-A497-E93C54B02B79},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{5519BDC7-7A8D-4857-9A95-43C85B2674B0},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{41C90F82-4B16-4DA7-B1B1-3F5EAB41F791},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{3CD8597D-7773-480A-B618-12106C949A29},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{408FD14E-4BB9-45EB-B437-28ABB56672D0},1,0.002000000
+TN_high_below_threshold,file: /Device/HarddiskVolume1/Users/sysadmin/AppData/Local/Packages/Microsoft.Windows.Cortana_cw5n1h2txyewy/LocalState/AppIconCache/100/{540B3103-3BA8-49E2-9113-F76508009F54},1,0.002000000

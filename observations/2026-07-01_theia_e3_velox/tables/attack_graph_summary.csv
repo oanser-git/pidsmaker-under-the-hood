@@ -1,0 +1,3 @@
+attack_slug,attack_name,gt_nodes,gt_gt_aggregated_edges,gt_gt_raw_events,total_window_events,events_incident_to_gt
+browser_extension_drakon_dropper,Browser Extension Drakon Dropper,61,139,843,259680,66028
+firefox_backdoor_drakon_in_memory,Firefox Backdoor Drakon In-Memory,58,115,25215,223029,80997

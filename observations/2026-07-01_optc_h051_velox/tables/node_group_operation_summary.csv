@@ -1,0 +1,16 @@
+node_group,operation,count,fraction
+FN_below_threshold,CREATE,44,0.385964912
+FN_below_threshold,START,42,0.368421053
+FN_below_threshold,MESSAGE,9,0.078947368
+FN_below_threshold,OPEN,6,0.052631579
+FN_below_threshold,DELETE,5,0.043859649
+FN_below_threshold,MODIFY,3,0.026315789
+FN_below_threshold,TERMINATE,2,0.017543860
+FN_below_threshold,RENAME,1,0.008771930
+FN_below_threshold,WRITE,1,0.008771930
+FN_below_threshold,READ,1,0.008771930
+TN_high_below_threshold,RENAME,263,0.526000000
+TN_high_below_threshold,CREATE,135,0.270000000
+TN_high_below_threshold,DELETE,41,0.082000000
+TN_high_below_threshold,MODIFY,38,0.076000000
+TN_high_below_threshold,WRITE,23,0.046000000

@@ -1,0 +1,16 @@
+node_group,operation,type_pair,count,fraction
+TP_above_threshold,EVENT_EXECUTE,file->subject,21,0.913043478
+TP_above_threshold,EVENT_RECVMSG,file->subject,2,0.086956522
+FP_above_threshold,EVENT_RECVMSG,file->subject,1079,0.997227357
+FP_above_threshold,EVENT_EXECUTE,file->subject,3,0.002772643
+FN_below_threshold,EVENT_OPEN,file->subject,16,0.355555556
+FN_below_threshold,EVENT_RECVFROM,netflow->subject,14,0.311111111
+FN_below_threshold,EVENT_CONNECT,subject->netflow,4,0.088888889
+FN_below_threshold,EVENT_EXECUTE,file->subject,3,0.066666667
+FN_below_threshold,EVENT_READ,file->subject,2,0.044444444
+FN_below_threshold,EVENT_SENDMSG,subject->file,2,0.044444444
+FN_below_threshold,EVENT_WRITE,subject->file,2,0.044444444
+FN_below_threshold,EVENT_CONNECT,subject->file,1,0.022222222
+FN_below_threshold,EVENT_WRITE,subject->netflow,1,0.022222222
+TN_high_below_threshold,EVENT_EXECUTE,file->subject,491,0.982000000
+TN_high_below_threshold,EVENT_RECVFROM,file->subject,9,0.018000000

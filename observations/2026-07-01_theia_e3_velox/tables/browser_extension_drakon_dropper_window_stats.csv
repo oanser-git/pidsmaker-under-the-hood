@@ -1,0 +1,2 @@
+attack_slug,attack_name,start_time,end_time,gt_node_rows,unique_gt_nodes,total_window_events,events_incident_to_gt,events_both_endpoints_gt,distinct_src_nodes_incident,distinct_dst_nodes_incident
+browser_extension_drakon_dropper,Browser Extension Drakon Dropper,2018-04-12 12:40:00,2018-04-12 13:30:00,61,61,259680,66028,843,254,25606
