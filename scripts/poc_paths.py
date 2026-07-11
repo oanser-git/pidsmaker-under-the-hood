@@ -40,6 +40,7 @@ def artifacts_root():
 
     candidates = [
         Path("/home/artifacts"),
+        repo_root(),
         repo_root() / "artifacts",
         repo_root().parent / "PIDSMaker-velox-paper" / "artifacts",
     ]
@@ -47,3 +48,21 @@ def artifacts_root():
         if path.exists():
             return path
     return repo_root() / "artifacts"
+
+
+def inputs_root():
+    env_root = os.environ.get("INPUTS_DIR") or os.environ.get("POC_INPUTS_DIR")
+    if env_root:
+        return Path(env_root).expanduser()
+    return artifacts_root() / "inputs"
+
+
+def dataset_inputs(slug):
+    return inputs_root() / slug
+
+
+def first_existing(*paths):
+    for path in paths:
+        if path.exists():
+            return path
+    return paths[0]

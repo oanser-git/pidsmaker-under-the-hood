@@ -18,7 +18,7 @@ import torch.nn.functional as F
 from captum.attr import FeatureAblation
 
 
-from poc_paths import add_pidsmaker_src, artifacts_root  # noqa: E402
+from poc_paths import add_pidsmaker_src, artifacts_root, dataset_inputs  # noqa: E402
 
 
 add_pidsmaker_src()
@@ -29,40 +29,33 @@ RUNS = {
         "obs_id": "2026-07-01_theia_e3_velox",
         "dataset": "THEIA_E3",
         "model_slug": "theia_e3",
-        "edge_dir_candidates": [
-            "499b3a9d2ad282bab5e39ca1a680d479cb2804fbb35d8759f2e3e84fbdd30d1a",
-            "1c3c32bde5673f589fc13db31945a83a617cd549e7b05c07a72d8a56211215ec",
-        ],
     },
     "CADETS_E3": {
         "obs_id": "2026-07-01_cadets_e3_velox",
         "dataset": "CADETS_E3",
         "model_slug": "cadets_e3",
-        "edge_dir_candidates": ["eae5106c3e9b47e33137c97ef008f51a1ef2c69d85c7398510d91586b7bda848"],
     },
     "optc_h201": {
         "obs_id": "2026-07-01_optc_h201_velox",
         "dataset": "optc_h201",
         "model_slug": "optc_h201",
-        "edge_dir_candidates": ["6a3db7ae1e2232a0d7450f8d450b249ef5a448a63ebc4ef5a4bc633db1fb755d"],
     },
     "optc_h501": {
         "obs_id": "2026-07-01_optc_h501_velox",
         "dataset": "optc_h501",
         "model_slug": "optc_h501",
-        "edge_dir_candidates": ["fcc39f462d34d8d0a2b9dd02365aa38717cb247d6d5d9d4a208cc961270d3d2f"],
     },
     "optc_h051": {
         "obs_id": "2026-07-01_optc_h051_velox",
         "dataset": "optc_h051",
         "model_slug": "optc_h051",
-        "edge_dir_candidates": ["7f75250cc14901cf70bde015a0bab8f5d5ecc3513462f5d9e7d16ae8b4eb157b"],
     },
 }
 OBS_ID = RUNS["THEIA_E3"]["obs_id"]
 DATASET = RUNS["THEIA_E3"]["dataset"]
 MODEL_SLUG = RUNS["THEIA_E3"]["model_slug"]
-EDGE_DIR_CANDIDATES = list(RUNS["THEIA_E3"]["edge_dir_candidates"])
+INPUT_DIR = dataset_inputs(MODEL_SLUG)
+EDGE_DIR_CANDIDATES = ["edge_embeds"]
 DARPA_EDGE_TYPE_NAMES = {
     0: "EVENT_CONNECT",
     1: "EVENT_EXECUTE",
@@ -149,23 +142,24 @@ NODE_GROUP_SHORT = {
 ROOT = artifacts_root()
 OBS_DIR = ROOT / "observations" / OBS_ID
 SELECTED_PATH = OBS_DIR / "tables/selected_responsible_edges.csv"
-POST_EPOCH_WEIGHTS_PATH = OBS_DIR / f"models/{MODEL_SLUG}_velox_post_epoch_model_epoch_0/state_dict.pkl"
+POST_EPOCH_WEIGHTS_PATH = INPUT_DIR / "state_dict.pkl"
 AUTHOR_WEIGHTS_PATH = Path(f"/home/weights/encoder/{DATASET}.pkl") if Path(f"/home/weights/encoder/{DATASET}.pkl").exists() else Path(f"weights/encoder/{DATASET}.pkl")
 WEIGHTS_PATH = POST_EPOCH_WEIGHTS_PATH if POST_EPOCH_WEIGHTS_PATH.exists() else AUTHOR_WEIGHTS_PATH
 
 
 def configure_run(run_key):
-    global OBS_ID, DATASET, MODEL_SLUG, EDGE_DIR_CANDIDATES, EDGE_TYPE_NAMES
+    global OBS_ID, DATASET, MODEL_SLUG, INPUT_DIR, EDGE_DIR_CANDIDATES, EDGE_TYPE_NAMES
     global OBS_DIR, SELECTED_PATH, POST_EPOCH_WEIGHTS_PATH, AUTHOR_WEIGHTS_PATH, WEIGHTS_PATH
     run = RUNS[run_key]
     OBS_ID = run["obs_id"]
     DATASET = run["dataset"]
     MODEL_SLUG = run["model_slug"]
-    EDGE_DIR_CANDIDATES = list(run["edge_dir_candidates"])
+    INPUT_DIR = dataset_inputs(MODEL_SLUG)
+    EDGE_DIR_CANDIDATES = ["edge_embeds"]
     EDGE_TYPE_NAMES = dict(OPTC_EDGE_TYPE_NAMES if DATASET.startswith("optc_") else DARPA_EDGE_TYPE_NAMES)
     OBS_DIR = ROOT / "observations" / OBS_ID
     SELECTED_PATH = OBS_DIR / "tables/selected_responsible_edges.csv"
-    POST_EPOCH_WEIGHTS_PATH = OBS_DIR / f"models/{MODEL_SLUG}_velox_post_epoch_model_epoch_0/state_dict.pkl"
+    POST_EPOCH_WEIGHTS_PATH = INPUT_DIR / "state_dict.pkl"
     AUTHOR_WEIGHTS_PATH = Path(f"/home/weights/encoder/{DATASET}.pkl") if Path(f"/home/weights/encoder/{DATASET}.pkl").exists() else Path(f"weights/encoder/{DATASET}.pkl")
     WEIGHTS_PATH = POST_EPOCH_WEIGHTS_PATH if POST_EPOCH_WEIGHTS_PATH.exists() else AUTHOR_WEIGHTS_PATH
 
@@ -267,7 +261,7 @@ def parse_row_raw_time(row):
 
 
 def find_window_path(edge_dir_id, row):
-    base = ROOT / f"featurization/{DATASET}/embed_edges/{edge_dir_id}/edge_embeds/test"
+    base = INPUT_DIR / "edge_embeds" / "test"
     exact = base / (row["window"] + ".TemporalData.simple")
     if exact.exists():
         return exact

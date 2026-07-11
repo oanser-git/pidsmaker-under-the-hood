@@ -21,16 +21,15 @@ from matplotlib.patches import Patch
 import numpy as np
 import torch
 
-from poc_paths import artifacts_root
+from poc_paths import artifacts_root, dataset_inputs, first_existing
 
 
 RUNS = {
     "THEIA_E3": {
         "obs_id": "2026-07-01_theia_e3_velox",
         "dataset": "THEIA_E3",
+        "slug": "theia_e3",
         "db": "theia_e3",
-        "gnn_run_id": "b697daa7af550a0e650e8603203036a4ea5450d572f20f2c6ba0aafde1c8b5fc",
-        "eval_run_id": "720c98a89d0bb855ac3dd7ae738b360441ca346e5ac7fc97680d12d2e1884108",
         "attack_names": {
             0: "Browser extension Drakon dropper",
             1: "Firefox backdoor Drakon in-memory",
@@ -39,9 +38,8 @@ RUNS = {
     "CADETS_E3": {
         "obs_id": "2026-07-01_cadets_e3_velox",
         "dataset": "CADETS_E3",
+        "slug": "cadets_e3",
         "db": "cadets_e3",
-        "gnn_run_id": "ad1cce59e1f470e42f1c408928d542f03116b80d2fb8f91314206ec3f855fd52",
-        "eval_run_id": "4098bf9f7cb64a267341674a27e1074ec7192a4bfd0e07cb2e9af0bbafd58e4c",
         "attack_names": {
             0: "Nginx backdoor 06",
             1: "Nginx backdoor 12",
@@ -51,25 +49,22 @@ RUNS = {
     "optc_h201": {
         "obs_id": "2026-07-01_optc_h201_velox",
         "dataset": "optc_h201",
+        "slug": "optc_h201",
         "db": "optc_201",
-        "gnn_run_id": "74a8ea9eb92352cccd45ef6c8ce8a7d853794ad55b3770f751610f2167e6a483",
-        "eval_run_id": "13911614d72e54864db72628acc32dbd72687c95aa16358ffa173268494e79e9",
         "attack_names": {0: "OPTC h201 attack"},
     },
     "optc_h501": {
         "obs_id": "2026-07-01_optc_h501_velox",
         "dataset": "optc_h501",
+        "slug": "optc_h501",
         "db": "optc_501",
-        "gnn_run_id": "3913a9c3d68fcdd8485adaed7176a063f188aec97be631e7c4d351718afb8ef7",
-        "eval_run_id": "1ed3b5b56aa5e56830706f3a70641c2defa8caec9d57f423e43399cc91db2517",
         "attack_names": {0: "OPTC h501 attack"},
     },
     "optc_h051": {
         "obs_id": "2026-07-01_optc_h051_velox",
         "dataset": "optc_h051",
+        "slug": "optc_h051",
         "db": "optc_051",
-        "gnn_run_id": "6c7bf3e5bcd436b07bcfffaa3a73840330db85c25cc4b179b85b86fbbdf6fb62",
-        "eval_run_id": "9c7192a2df477c09b282149c9705682aa82c5d8d4a05876adcc95a568af2a65c",
         "attack_names": {0: "OPTC h051 attack"},
     },
 }
@@ -77,8 +72,6 @@ RUNS = {
 OBS_ID = RUNS["THEIA_E3"]["obs_id"]
 DATASET = RUNS["THEIA_E3"]["dataset"]
 DB_NAME = RUNS["THEIA_E3"]["db"]
-GNN_RUN_ID = RUNS["THEIA_E3"]["gnn_run_id"]
-EVAL_RUN_ID = RUNS["THEIA_E3"]["eval_run_id"]
 ATTACK_NAMES = dict(RUNS["THEIA_E3"]["attack_names"])
 ENDPOINT_TOP_N = 0
 EASTERN = ZoneInfo("US/Eastern") if ZoneInfo is not None else timezone.utc
@@ -87,27 +80,27 @@ EASTERN = ZoneInfo("US/Eastern") if ZoneInfo is not None else timezone.utc
 ROOT = artifacts_root()
 OBS_ROOT = ROOT / "observations"
 OBS_DIR = OBS_ROOT / OBS_ID
-SCORE_PATH = ROOT / f"detection/evaluation/{EVAL_RUN_ID}/{DATASET}/precision_recall_dir/scores_model_epoch_0.pkl"
-RESULT_PATH = ROOT / f"detection/evaluation/{EVAL_RUN_ID}/{DATASET}/results/results.pth"
-EDGE_ROOT = ROOT / f"detection/gnn_training/{GNN_RUN_ID}/{DATASET}/edge_losses"
+INPUT_DIR = dataset_inputs(RUNS["THEIA_E3"]["slug"])
+SCORE_PATH = first_existing(INPUT_DIR / "scores_model_epoch_0.pkl", INPUT_DIR / "precision_recall_dir" / "scores_model_epoch_0.pkl")
+RESULT_PATH = first_existing(INPUT_DIR / "results.pth", INPUT_DIR / "results" / "results.pth")
+EDGE_ROOT = INPUT_DIR / "edge_losses"
 VAL_DIR = EDGE_ROOT / "val/model_epoch_0"
 TEST_DIR = EDGE_ROOT / "test/model_epoch_0"
 
 
 def configure_run(run_key):
-    global OBS_ID, DATASET, DB_NAME, GNN_RUN_ID, EVAL_RUN_ID, ATTACK_NAMES
-    global OBS_DIR, SCORE_PATH, RESULT_PATH, EDGE_ROOT, VAL_DIR, TEST_DIR
+    global OBS_ID, DATASET, DB_NAME, ATTACK_NAMES
+    global OBS_DIR, INPUT_DIR, SCORE_PATH, RESULT_PATH, EDGE_ROOT, VAL_DIR, TEST_DIR
     run = RUNS[run_key]
     OBS_ID = run["obs_id"]
     DATASET = run["dataset"]
     DB_NAME = run["db"]
-    GNN_RUN_ID = run["gnn_run_id"]
-    EVAL_RUN_ID = run["eval_run_id"]
     ATTACK_NAMES = dict(run["attack_names"])
     OBS_DIR = OBS_ROOT / OBS_ID
-    SCORE_PATH = ROOT / f"detection/evaluation/{EVAL_RUN_ID}/{DATASET}/precision_recall_dir/scores_model_epoch_0.pkl"
-    RESULT_PATH = ROOT / f"detection/evaluation/{EVAL_RUN_ID}/{DATASET}/results/results.pth"
-    EDGE_ROOT = ROOT / f"detection/gnn_training/{GNN_RUN_ID}/{DATASET}/edge_losses"
+    INPUT_DIR = dataset_inputs(run["slug"])
+    SCORE_PATH = first_existing(INPUT_DIR / "scores_model_epoch_0.pkl", INPUT_DIR / "precision_recall_dir" / "scores_model_epoch_0.pkl")
+    RESULT_PATH = first_existing(INPUT_DIR / "results.pth", INPUT_DIR / "results" / "results.pth")
+    EDGE_ROOT = INPUT_DIR / "edge_losses"
     VAL_DIR = EDGE_ROOT / "val/model_epoch_0"
     TEST_DIR = EDGE_ROOT / "test/model_epoch_0"
 
@@ -203,10 +196,6 @@ def setup_style():
         "savefig.facecolor": "white",
         "legend.frameon": False,
     })
-
-
-def rel(path):
-    return str(path).replace(str(ROOT) + "/", "artifacts/")
 
 
 def ns_to_eastern(ns):
@@ -385,10 +374,6 @@ def add_endpoint_pair_legends(ax, operations, attack_labels, event_loc="upper ri
     event_legend = ax.legend(handles=operation_handles, title="Event type", loc=event_loc, frameon=False, fontsize=9.4, title_fontsize=9.6)
     ax.add_artist(event_legend)
     ax.legend(handles=attack_handles, title="Attack label", loc=attack_loc, frameon=False, fontsize=9.4, title_fontsize=9.6)
-
-
-def md_escape(text):
-    return str(text).replace("|", "\\|")
 
 
 def save_plot(fig, stem):
@@ -1324,177 +1309,6 @@ def plot_operation_type_pair_mix(summary_rows):
     save_plot(fig, "node_group_operation_type_pair_mix")
 
 
-def write_docs(args, db_status, metrics, threshold, coverage, node_group_rows, band_rows, operation_rows, type_pair_rows, endpoint_pair_rows, selected_rows, exact_matches, scanned_edges):
-    return
-    tp = next(row for row in node_group_rows if row["node_group"] == "TP_above_threshold")
-    fp = next(row for row in node_group_rows if row["node_group"] == "FP_above_threshold")
-    fn = next(row for row in node_group_rows if row["node_group"] == "FN_below_threshold")
-    high_benign = next(row for row in node_group_rows if row["node_group"] == "TN_high_below_threshold")
-    top_fp_ops = [row for row in operation_rows if row["node_group"] == "FP_above_threshold"][:3]
-    top_fn_ops = [row for row in operation_rows if row["node_group"] == "FN_below_threshold"][:3]
-    fp_op_text = ", ".join(f"`{row['operation']}` {row['count']}" for row in top_fp_ops) or "N/A"
-    fn_op_text = ", ".join(f"`{row['operation']}` {row['count']}" for row in top_fn_ops) or "N/A"
-    tp_endpoint_pairs = [row for row in endpoint_pair_rows if row["node_group"] == "TP_above_threshold"]
-    fp_endpoint_pairs = [row for row in endpoint_pair_rows if row["node_group"] == "FP_above_threshold"]
-    fn_endpoint_pairs = [row for row in endpoint_pair_rows if row["node_group"] == "FN_below_threshold"]
-
-    def pair_key(row):
-        return (row["operation"], row["type_pair"], row["src_label"], row["dst_label"], row["attack"])
-
-    def distinct_pair_count(rows):
-        return len({pair_key(row) for row in rows})
-
-    def target_role_text(row):
-        role = row.get("target_role", "")
-        if role == "src":
-            return "source flagged"
-        if role == "dst":
-            return "destination flagged"
-        if role == "self":
-            return "source/destination flagged"
-        return "flagged role unknown"
-
-    fn_type_counts = defaultdict(lambda: {"nodes": 0, "pair_keys": set(), "plot_rows": 0})
-    for row in fn_endpoint_pairs:
-        fn_type_counts[row["type_pair"]]["nodes"] += int(row["count"])
-        fn_type_counts[row["type_pair"]]["pair_keys"].add(pair_key(row))
-        fn_type_counts[row["type_pair"]]["plot_rows"] += 1
-    top_tp_pair = max(tp_endpoint_pairs, key=lambda row: int(row["count"])) if tp_endpoint_pairs else None
-    top_fp_pair = max(fp_endpoint_pairs, key=lambda row: int(row["count"])) if fp_endpoint_pairs else None
-    top_tp_pair_text = f"`{top_tp_pair['short_endpoint_pair']}` ({top_tp_pair['count']} nodes, {top_tp_pair['short_attack']}, {target_role_text(top_tp_pair)})" if top_tp_pair else "N/A"
-    top_fp_pair_text = f"`{top_fp_pair['short_endpoint_pair']}` ({top_fp_pair['count']} nodes, {target_role_text(top_fp_pair)})" if top_fp_pair else "N/A"
-    highlights = build_endpoint_highlights(endpoint_pair_rows)
-    tp_highlight_count = highlighted_count(tp_endpoint_pairs, highlights, HIGHLIGHT_STYLES["tp_primary"])
-    fp_highlight_count = highlighted_count(fp_endpoint_pairs, highlights, HIGHLIGHT_STYLES["fp_primary"])
-    fn_highlight_count = highlighted_count(fn_endpoint_pairs, highlights, HIGHLIGHT_STYLES["fn_network"])
-
-    node_group_table = "\n".join(
-        f"| {row['description']} | `{int(row['nodes']):,}` | `{row['score_p50']}` | `{row['score_p90']}` | `{row['score_max']}` | `{row['incident_edges_p50']}` | `{row['incident_edges_p90']}` |"
-        for row in node_group_rows
-    )
-    band_table = "\n".join(
-        f"| {row['score_band']} | `{int(row['total']):,}` | `{int(row['benign']):,}` | `{int(row['malicious']):,}` | `{float(row['malicious_fraction']):.6f}` |"
-        for row in band_rows
-    )
-    example_rows = selected_rows[:8]
-    example_table = "\n".join(
-        f"| `{row['rank']}` | {NODE_GROUP_LABELS[row['node_group']]} | `{row['score']}` | `{row['operation']}` | {md_escape(row['src_label'])} -> {md_escape(row['dst_label'])} |"
-        for row in example_rows
-    )
-
-    readme = f"""# THEIA_E3 VELOX Score-Overlap Explanation
-
-## Question
-
-Why do benign and malicious THEIA_E3 VELOX node-score distributions overlap?
-
-## Scope
-
-| Field | Value |
-|---|---|
-| Dataset | `{DATASET}` |
-| System | `velox` |
-| Mode | saved `--tuned --from_weights --restart_from_scratch` artifacts |
-| Score file | `{rel(SCORE_PATH)}` |
-| Test edge losses | `{rel(TEST_DIR)}` |
-| Validation edge losses | `{rel(VAL_DIR)}` |
-| DB enrichment | `{db_status}` |
-| Test edges scanned | `{scanned_edges:,}` |
-
-## Main Finding
-
-The overlap is expected from VELOX's scoring mechanism. VELOX scores edges first and assigns each endpoint node the maximum incident edge loss. In this run, `{exact_matches:,}` scored nodes have a saved node score matching their responsible max edge loss within `1e-6`.
-
-At the fixed threshold `{threshold:.9f}`, THEIA_E3 has `TP={metrics['tp']}`, `FP={metrics['fp']}`, and `FN={metrics['fn']}`. The threshold-positive false positives are not random: their responsible edges are mostly the same kind of high-loss endpoint/event pattern as the true positives. Top FP operations: {fp_op_text}. False negatives stay below threshold because their maximum incident edge never exceeds the validation max; top FN responsible operations: {fn_op_text}.
-
-`file->subject EVENT_EXECUTE` reflects PIDSMaker/DARPA graph orientation; `subject` means process. Read it as an execution relationship between a file endpoint and a process endpoint, not as a literal claim that a file actively initiated execution.
-
-The `{NODE_GROUP_LABELS["TN_high_below_threshold"]}` group is an analysis subset, not a new metric. It keeps the plots readable and focuses on the benign nodes closest to becoming false positives. The size comes from the regeneration flag `--high-below-n {args.high_below_n:,}` and can be changed if a wider near-threshold slice is needed.
-
-The endpoint-type plot intentionally collapses concrete paths. Above threshold, TP and FP nodes are all `EVENT_EXECUTE file->subject`, but they are not the same exact file/process pair. TP nodes use `{distinct_pair_count(tp_endpoint_pairs)}` distinct responsible endpoint pairs, shown as `{len(tp_endpoint_pairs)}` source/destination-flagged plot rows. FP nodes use `{distinct_pair_count(fp_endpoint_pairs)}` distinct benign endpoint pairs, shown as `{len(fp_endpoint_pairs)}` source/destination-flagged plot rows. The most common TP plotted row is {top_tp_pair_text}; the most common FP plotted row is {top_fp_pair_text}.
-
-The FN group is different. Its responsible endpoint pairs cover `{distinct_pair_count(fn_endpoint_pairs)}` concrete pairs: `subject->netflow` has `{fn_type_counts['subject->netflow']['nodes']}` nodes across `{len(fn_type_counts['subject->netflow']['pair_keys'])}` pairs, `file->subject` has `{fn_type_counts['file->subject']['nodes']}` nodes across `{len(fn_type_counts['file->subject']['pair_keys'])}` pairs, and `netflow->subject` has `{fn_type_counts['netflow->subject']['nodes']}` nodes across `{len(fn_type_counts['netflow->subject']['pair_keys'])}` pairs. This is why the FN bar is not all `EVENT_EXECUTE`.
-
-In the concrete endpoint-pair plots, bar color encodes the event type and the dot/text tag encodes the attack label or benign status. The underlined y-axis role word (`file`, `process`, or `netflow`) marks which endpoint received the VELOX score for that row. Highlighted y-axis labels mark the dominant visual patterns: TP's primary attack pair accounts for `{tp_highlight_count}/{tp['nodes']}` nodes, FP's dominant benign pair accounts for `{fp_highlight_count}/{fp['nodes']}` nodes, and FN's highlighted process-to-network send pairs account for `{fn_highlight_count}/{fn['nodes']}` missed nodes.
-
-The coverage point remains rank `{coverage['rank']}`, node `{coverage['node']}`, score `{coverage['score']:.9f}`. That explains high ADP despite overlapping node-score distributions: one high-loss edge from each configured attack appears early, while many other malicious nodes have routine-looking max edges.
-
-## Node Group Summary
-
-| Node group | Nodes | Median score | p90 score | Max score | Median incident edges | p90 incident edges |
-|---|---:|---:|---:|---:|---:|---:|
-{node_group_table}
-
-## Score Bands
-
-| Score band | Total | Benign | Malicious | Malicious fraction |
-|---|---:|---:|---:|---:|
-{band_table}
-
-## Top Responsible-Edge Examples
-
-| Rank | Node group | Score | Operation | Responsible edge |
-|---:|---|---:|---|---|
-{example_table}
-
-## Plots
-
-| Plot | PNG | SVG | Purpose |
-|---|---|---|---|
-| Node-group incident edges | `plots/node_group_score_and_incident_edges.png` | `plots/node_group_score_and_incident_edges.svg` | Shows incident-edge-count distributions by node group. |
-| Operation mix | `plots/node_group_operation_mix.png` | `plots/node_group_operation_mix.svg` | Shows which event operations explain selected TP/FP/FN/high-benign node groups. |
-| Endpoint type-pair mix | `plots/node_group_type_pair_mix.png` | `plots/node_group_type_pair_mix.svg` | Shows whether responsible edges are file->subject, file->file, etc. |
-| Operation + endpoint type-pair mix | `plots/node_group_operation_type_pair_mix.png` | `plots/node_group_operation_type_pair_mix.svg` | Combines the previous two summaries in one view: color is event type, hatch is source/destination endpoint type. |
-| TP/FP responsible endpoint pairs | `plots/tp_fp_responsible_endpoint_pairs.png` | `plots/tp_fp_responsible_endpoint_pairs.svg` | Expands the above-threshold `EVENT_EXECUTE file->subject` result into concrete file/process pairs; highlighted y-axis labels mark the primary TP and FP patterns. |
-| FN responsible endpoint pairs | `plots/fn_responsible_endpoint_pairs.png` | `plots/fn_responsible_endpoint_pairs.svg` | Expands the missed malicious nodes into concrete process/network and file/process responsible pairs; highlighted y-axis labels mark the dominant process-to-network send patterns. |
-| Internal feature ablation | `plots/internal_feature_ablation.png` | `plots/internal_feature_ablation.svg` | Diverging bar plot of Captum/direct ablation over all TP/FP/FN responsible edges plus the top 500 near-threshold benign responsible edges, summarized by node group, event type, and endpoint type using the saved post-epoch model state. |
-
-## Data Tables
-
-| File | Purpose |
-|---|---|
-| `tables/node_group_summary.csv` | Counts and quantiles for TP, FP, FN, high benign below threshold, and remaining benign nodes. |
-| `tables/score_band_summary.csv` | Benign/malicious counts across score bands. |
-| `tables/selected_responsible_edges.csv` | Responsible-edge rows for all TP/FP/FN nodes plus top `{args.high_below_n:,}` benign nodes below threshold. |
-| `tables/node_group_operation_summary.csv` | Operation counts within selected node groups. |
-| `tables/node_group_type_pair_summary.csv` | Endpoint type-pair counts within selected node groups. |
-| `tables/node_group_operation_type_pair_summary.csv` | Joint operation and endpoint type-pair counts within selected node groups. |
-| `tables/node_group_source_label_summary.csv` | Top source endpoint labels within selected node groups. |
-| `tables/node_group_destination_label_summary.csv` | Top destination endpoint labels within selected node groups. |
-| `tables/responsible_endpoint_pair_summary.csv` | Concrete responsible endpoint-pair counts by node group, event type, flagged endpoint role, and attack label. |
-| `tables/internal_edge_logits.csv` | Edge-type logits/probabilities for all TP/FP/FN responsible edges plus the top 500 near-threshold benign responsible edges using the saved post-epoch model state. |
-| `tables/internal_feature_ablation.csv` | Per-edge Captum `FeatureAblation` and direct zero-baseline ablation by feature group. |
-| `tables/internal_feature_ablation_summary.csv` | Median/mean/quantile loss drops by node group, event type, endpoint type, and feature group. |
-
-## Scientific Interpretation
-
-VELOX learned an edge-type expectation model, not a complete malicious-node separator. The distribution overlaps for three reasons visible in these summaries: benign endpoints can share high-loss attack-adjacent edges, malicious nodes can have only routine low-loss incident edges, and max aggregation gives high-degree benign nodes more chances to inherit a rare edge loss.
-
-Captum `0.7.0` is installed in the current `pids` runtime. The post-epoch model state was regenerated with `save_theia_velox_post_epoch_model.py`, then used for internal attribution. Computed losses for all 605 TP/FP/FN responsible edges plus the top 500 near-threshold benign responsible edges match the saved edge-loss CSV values within `2e-6`, so these logits/ablations are exact for those evaluated edges.
-
-The internal attribution plot shows median loss change as bars. Bars to the right mean the feature group drives high loss; bars to the left mean the feature group helps predict the true edge type. The high-loss above-threshold `EVENT_EXECUTE file->subject` groups are driven mostly by source endpoint type, while the below-threshold process/network sends have small or negative loss changes. The `Benign` row is the top 500 near-threshold benign slice from the selected responsible-edge table, not all benign nodes.
-
-## Regeneration
-
-```shell
-docker exec pidsmaker-pids bash -lc 'source /opt/conda/etc/profile.d/conda.sh && conda activate pids && PYTHONPATH=/home/src python /home/artifacts/observations/shared_scripts/generate_theia_score_overlap_observation.py --high-below-n {args.high_below_n}'
-```
-
-Regenerate internal attribution with the activated `pids` environment:
-
-```shell
-docker exec pidsmaker-pids bash -lc 'source /opt/conda/etc/profile.d/conda.sh && conda activate pids && PYTHONPATH=/home/src python /home/artifacts/observations/shared_scripts/generate_theia_internal_attribution.py'
-```
-
-Regenerate the post-epoch model state without rerunning evaluation:
-
-```shell
-docker exec pidsmaker-pids bash -lc 'source /opt/conda/etc/profile.d/conda.sh && conda activate pids && PYTHONPATH=/home/src python /home/artifacts/observations/shared_scripts/save_theia_velox_post_epoch_model.py'
-```
-"""
-    print(OBS_DIR)
-
-
 def generate(args, run_key):
     global ENDPOINT_TOP_N
     configure_run(run_key)
@@ -1509,10 +1323,10 @@ def generate(args, run_key):
     order = ranked_order(scores, nodes)
     rank_by_node = {int(node): rank for rank, node in enumerate(nodes[order], start=1)}
     score_by_node = {int(node): float(score) for node, score in zip(nodes, scores)}
-    threshold, val_losses, test_losses, max_edges, incident_counts, scanned_edges = scan_threshold_and_responsible_edges(nodes)
+    threshold, val_losses, test_losses, max_edges, incident_counts, _scanned_edges = scan_threshold_and_responsible_edges(nodes)
     coverage = find_coverage(scores, labels, nodes, node2attacks, order)
     coverage_score = coverage["score"] if coverage else threshold
-    node_groups, pred, high_below = assign_node_groups(scores, labels, nodes, threshold, order, args.high_below_n)
+    node_groups, pred, _high_below = assign_node_groups(scores, labels, nodes, threshold, order, args.high_below_n)
 
     selected_nodes = [n for n, group_key in node_groups.items() if group_key != "TN_other"]
     selected_edges = [max_edges[n] for n in selected_nodes if n in max_edges]
@@ -1521,7 +1335,7 @@ def generate(args, run_key):
         endpoint_nodes.add(int(edge["srcnode"]))
         endpoint_nodes.add(int(edge["dstnode"]))
 
-    conn, db_status = db_connection()
+    conn, _db_status = db_connection()
     metadata = fetch_node_metadata(conn, endpoint_nodes)
     event_meta = fetch_event_metadata(conn, selected_edges)
     if conn is not None:
@@ -1536,14 +1350,6 @@ def generate(args, run_key):
     source_rows = aggregate_selected(selected_rows, "src_label")
     destination_rows = aggregate_selected(selected_rows, "dst_label")
     endpoint_pair_rows = aggregate_endpoint_pairs(selected_rows)
-
-    metrics = {
-        "tp": int(((pred == 1) & (labels == 1)).sum()),
-        "fp": int(((pred == 1) & (labels == 0)).sum()),
-        "fn": int(((pred == 0) & (labels == 1)).sum()),
-        "tn": int(((pred == 0) & (labels == 0)).sum()),
-    }
-    exact_matches = sum(1 for node, score in score_by_node.items() if node in max_edges and abs(score - max_edges[node]["loss"]) <= 1e-6)
 
     write_csv(OBS_DIR / "tables/node_group_summary.csv", list(node_group_rows[0]), node_group_rows)
     write_csv(OBS_DIR / "tables/score_band_summary.csv", list(band_rows[0]), band_rows)
@@ -1577,7 +1383,6 @@ def generate(args, run_key):
     plot_tp_fp_endpoint_pairs(endpoint_pair_rows)
     plot_fn_endpoint_pairs(endpoint_pair_rows)
 
-    write_docs(args, db_status, metrics, threshold, coverage, node_group_rows, band_rows, operation_rows, type_pair_rows, endpoint_pair_rows, selected_rows, exact_matches, scanned_edges)
     print(OBS_DIR)
 
 

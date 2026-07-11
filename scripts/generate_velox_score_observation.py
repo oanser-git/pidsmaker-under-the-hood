@@ -1,6 +1,5 @@
 import argparse
 import csv
-import glob
 import math
 import os
 import textwrap
@@ -14,19 +13,25 @@ import torch
 from matplotlib.lines import Line2D
 from sklearn.metrics import auc, average_precision_score, precision_recall_curve, roc_curve
 
-from poc_paths import artifacts_root
+from poc_paths import artifacts_root, dataset_inputs, first_existing
 
 
 ROOT = artifacts_root()
 OBS_ROOT = ROOT / "observations"
 
 RUNS = {
+    "THEIA_E3": {
+        "slug": "theia_e3",
+        "obs_id": "2026-07-01_theia_e3_velox",
+        "db": "theia_e3",
+        "log": "artifacts/velox_THEIA_E3_from_weights.log",
+        "paper_best": "1.00",
+    },
     "CADETS_E3": {
         "slug": "cadets_e3",
         "obs_id": "2026-07-01_cadets_e3_velox",
         "db": "cadets_e3",
         "log": "artifacts/velox_CADETS_E3_from_weights_sanity.log",
-        "score_path": ROOT / "detection/evaluation/4098bf9f7cb64a267341674a27e1074ec7192a4bfd0e07cb2e9af0bbafd58e4c/CADETS_E3/precision_recall_dir/scores_model_epoch_0.pkl",
         "paper_best": "1.00",
     },
     "optc_h201": {
@@ -34,7 +39,6 @@ RUNS = {
         "obs_id": "2026-07-01_optc_h201_velox",
         "db": "optc_201",
         "log": "artifacts/velox_optc_h201_from_weights.log",
-        "score_path": ROOT / "detection/evaluation/13911614d72e54864db72628acc32dbd72687c95aa16358ffa173268494e79e9/optc_h201/precision_recall_dir/scores_model_epoch_0.pkl",
         "paper_best": "1.00",
     },
     "optc_h501": {
@@ -42,7 +46,6 @@ RUNS = {
         "obs_id": "2026-07-01_optc_h501_velox",
         "db": "optc_501",
         "log": "artifacts/velox_optc_h501_from_weights.log",
-        "score_path": ROOT / "detection/evaluation/1ed3b5b56aa5e56830706f3a70641c2defa8caec9d57f423e43399cc91db2517/optc_h501/precision_recall_dir/scores_model_epoch_0.pkl",
         "paper_best": "0.50",
     },
     "optc_h051": {
@@ -50,7 +53,6 @@ RUNS = {
         "obs_id": "2026-07-01_optc_h051_velox",
         "db": "optc_051",
         "log": "artifacts/velox_optc_h051_from_weights.log",
-        "score_path": ROOT / "detection/evaluation/9c7192a2df477c09b282149c9705682aa82c5d8d4a05876adcc95a568af2a65c/optc_h051/precision_recall_dir/scores_model_epoch_0.pkl",
         "paper_best": "1.00",
         "caveat": "Local ADP does not match the paper/reference best ADP for optc_h051.",
     },
@@ -90,10 +92,6 @@ def save(fig, obs_dir, stem):
     plt.close(fig)
 
 
-def rel(path):
-    return str(path).replace("/home/artifacts/", "artifacts/")
-
-
 def confusion(labels, pred):
     labels = np.asarray(labels, dtype=int)
     pred = np.asarray(pred, dtype=int)
@@ -113,9 +111,19 @@ def ranked_order(scores, nodes):
 
 
 def load_run(run):
-    score_path = run["score_path"]
-    result_path = score_path.parents[1] / "results/results.pth"
-    stats_path = score_path.parent / "stats_model_epoch_0.pth"
+    input_dir = dataset_inputs(run["slug"])
+    score_path = first_existing(
+        input_dir / "scores_model_epoch_0.pkl",
+        input_dir / "precision_recall_dir" / "scores_model_epoch_0.pkl",
+    )
+    result_path = first_existing(
+        input_dir / "results.pth",
+        input_dir / "results" / "results.pth",
+    )
+    stats_path = first_existing(
+        input_dir / "stats_model_epoch_0.pth",
+        input_dir / "precision_recall_dir" / "stats_model_epoch_0.pth",
+    )
     score_blob = torch.load(score_path)
     results = torch.load(result_path)
     stats = torch.load(stats_path) if stats_path.exists() else {}
@@ -129,7 +137,7 @@ def load_run(run):
 
 def scan_max_loss(path):
     threshold = None
-    for csv_path in glob.glob(str(path / "*.csv")):
+    for csv_path in path.glob("*.csv"):
         with open(csv_path, newline="") as f:
             for row in csv.DictReader(f):
                 loss = float(row["loss"])
@@ -138,16 +146,16 @@ def scan_max_loss(path):
     return threshold
 
 
-def find_threshold(dataset, scores, yhat):
+def find_threshold(dataset, scores, yhat, input_dir):
     lower = float(scores[yhat == 0].max()) if (yhat == 0).any() else float("nan")
     upper = float(scores[yhat == 1].min()) if (yhat == 1).any() else float("nan")
     candidates = []
-    pattern = ROOT / f"detection/gnn_training/*/{dataset}/edge_losses/val/model_epoch_0"
-    for path in glob.glob(str(pattern)):
-        max_loss = scan_max_loss(Path(path))
+    path = input_dir / "edge_losses" / "val" / "model_epoch_0"
+    if path.exists():
+        max_loss = scan_max_loss(path)
         if max_loss is None:
-            continue
-        if np.array_equal((scores > max_loss).astype(int), yhat):
+            max_loss = None
+        elif np.array_equal((scores > max_loss).astype(int), yhat):
             candidates.append((max_loss, path))
 
     if candidates:
@@ -526,36 +534,19 @@ def export_attack_nodes_csv(obs_dir, scores, labels, nodes, node2attacks, thresh
     print(out)
 
 
-def quantile_row(values):
-    return {
-        "count": int(len(values)),
-        "median": float(np.median(values)) if len(values) else float("nan"),
-        "p90": float(np.quantile(values, 0.9)) if len(values) else float("nan"),
-        "p95": float(np.quantile(values, 0.95)) if len(values) else float("nan"),
-        "p99": float(np.quantile(values, 0.99)) if len(values) else float("nan"),
-        "max": float(np.max(values)) if len(values) else float("nan"),
-    }
-
-
-def fmt(x, digits=6):
-    if x is None:
-        return "N/A"
-    if isinstance(x, float) and math.isnan(x):
-        return "N/A"
-    if isinstance(x, (int, np.integer)):
-        return f"{int(x):,}"
-    return f"{float(x):.{digits}f}"
-
-
-def write_docs(obs_dir, dataset, run, score_path, result_path, stats_path, metrics, threshold_info, all_attacks, curves, score_stats, labels, yhat, nodes, node2attacks):
+def write_summary_metrics(obs_dir, dataset, run, metrics, threshold_info, all_attacks, curves, labels, yhat):
     obs_dir.mkdir(parents=True, exist_ok=True)
     benign_count = int((labels == 0).sum())
     malicious_count = int((labels == 1).sum())
     predicted_positive = int(yhat.sum())
     all_attack_lines = "N/A"
     if all_attacks:
-        all_attack_lines = f"coverage rank `{all_attacks['rank']}`, coverage score `{all_attacks['score']:.9f}`, prefix TP/FP `{all_attacks['rank_prefix_tp']} / {all_attacks['rank_prefix_fp']}`, tie-inclusive TP/FP/FN `{all_attacks['score_cutoff_tp']} / {all_attacks['score_cutoff_fp']} / {all_attacks['score_cutoff_fn']}`"
-    caveat = f"\n\nCaveat: {run.get('caveat')}" if run.get("caveat") else ""
+        all_attack_lines = (
+            f"coverage rank {all_attacks['rank']}; "
+            f"coverage score {all_attacks['score']:.9f}; "
+            f"prefix TP/FP {all_attacks['rank_prefix_tp']} / {all_attacks['rank_prefix_fp']}; "
+            f"tie-inclusive TP/FP/FN {all_attacks['score_cutoff_tp']} / {all_attacks['score_cutoff_fp']} / {all_attacks['score_cutoff_fn']}"
+        )
     tables_dir = obs_dir / "tables"
     tables_dir.mkdir(parents=True, exist_ok=True)
     out = tables_dir / "summary_metrics.csv"
@@ -587,120 +578,17 @@ def write_docs(obs_dir, dataset, run, score_path, result_path, stats_path, metri
         for metric, value in rows:
             writer.writerow({"metric": metric, "value": value})
     print(out)
-    return
-
-    readme = f"""# {dataset} VELOX Score
-
-## Question
-
-What does the `--from_weights` VELOX run learn on `{dataset}`, and does it behave like a triage model or an automatic malicious-node classifier?
-
-## Scope
-
-| Field | Value |
-|---|---|
-| Dataset | `{dataset}` |
-| System | `velox` |
-| Mode | `--tuned --from_weights --restart_from_scratch` |
-| Run log | `{run['log']}` |
-| Score file | `{rel(score_path)}` |
-| Result file | `{rel(result_path)}` |
-| Stats file | `{rel(stats_path)}` |
-
-## Key Metrics
-
-| Metric | Value |
-|---|---:|
-| Total scored nodes | `{len(labels):,}` |
-| Benign nodes | `{benign_count:,}` |
-| Malicious nodes | `{malicious_count:,}` |
-| Predicted positives | `{predicted_positive:,}` |
-| VELOX threshold | `{threshold_info['threshold']:.9f}` |
-| Threshold TP / FP / FN | `{metrics['tp']} / {metrics['fp']} / {metrics['fn']}` |
-| Precision / Recall / F1 | `{metrics['precision']:.6f} / {metrics['recall']:.6f} / {metrics['f1']:.6f}` |
-| AUC | `{curves['auc']:.5f}` |
-| AP | `{curves['ap']:.5f}` |
-| ADP | `{curves['adp']:.5f}` |
-| Paper/reference best ADP | `{run.get('paper_best', 'N/A')}` |
-| Coverage point | {all_attack_lines} |
-
-{threshold_info['kind']} source: `{threshold_info['source']}`.{caveat}
-
-## Plots
-
-| Plot | PNG | SVG | Purpose |
-|---|---|---|---|
-| Score distribution | `plots/score_distribution.png` | `plots/score_distribution.svg` | Benign/malicious score overlap, VELOX threshold, and coverage-score marker. |
-| Metric curves | `plots/metric_curves.png` | `plots/metric_curves.svg` | ROC-AUC, precision-recall/AP, and PIDSMaker ADP curves. |
-| Ranked scores | `plots/ranked_scores.png` | `plots/ranked_scores.svg` | Attack nodes in the sorted suspicious-node queue. |
-| All attack nodes ranked | `plots/all_attack_nodes_ranked.png` | `plots/all_attack_nodes_ranked.svg` | Every attack-labeled node by global score rank. |
-| Top ranked nodes | `plots/top_ranked_nodes.png` | `plots/top_ranked_nodes.svg` | Top scored nodes with metadata when available. |
-
-## Data Tables
-
-| File | Purpose |
-|---|---|
-| `tables/all_attack_nodes_ranked.csv` | Ranked attack-node table for attack-labeled nodes that received test scores, with score, threshold flags, and metadata columns. |
-| `tables/attack_node_metadata.csv` | Optional metadata export used to enrich labels. |
-
-## Interpretation
-
-This observation mirrors the THEIA_E3 score-ranking observation. High ADP means attack coverage appears early in the ranked list; AP and threshold TP/FP/FN indicate automatic malicious-node classification quality.
-"""
-    (obs_dir / "README.md").write_text(readme)
-
-    notes_dir = obs_dir / "notes"
-    notes_dir.mkdir(exist_ok=True)
-    all_stats = score_stats["all"]
-    benign_stats = score_stats["benign"]
-    malicious_stats = score_stats["malicious"]
-    notes = f"""# Notes
-
-## Score Distribution Facts
-
-| Group | Count | Median | p90 | p95 | p99 | Max |
-|---|---:|---:|---:|---:|---:|---:|
-| All | `{all_stats['count']:,}` | `{fmt(all_stats['median'])}` | `{fmt(all_stats['p90'])}` | `{fmt(all_stats['p95'])}` | `{fmt(all_stats['p99'])}` | `{fmt(all_stats['max'])}` |
-| Benign | `{benign_stats['count']:,}` | `{fmt(benign_stats['median'])}` | `{fmt(benign_stats['p90'])}` | `{fmt(benign_stats['p95'])}` | `{fmt(benign_stats['p99'])}` | `{fmt(benign_stats['max'])}` |
-| Malicious | `{malicious_stats['count']:,}` | `{fmt(malicious_stats['median'])}` | `{fmt(malicious_stats['p90'])}` | `{fmt(malicious_stats['p95'])}` | `{fmt(malicious_stats['p99'])}` | `{fmt(malicious_stats['max'])}` |
-
-## Threshold And Ranking
-
-| Item | Value |
-|---|---:|
-| VELOX threshold | `{threshold_info['threshold']:.9f}` |
-| Threshold source | `{threshold_info['kind']}` |
-| Max saved negative score | `{threshold_info['lower']:.9f}` |
-| Min saved positive score | `{threshold_info['upper']:.9f}` |
-| TP / FP / FN | `{metrics['tp']} / {metrics['fp']} / {metrics['fn']}` |
-| Precision / Recall / F1 | `{metrics['precision']:.6f} / {metrics['recall']:.6f} / {metrics['f1']:.6f}` |
-| AUC / AP / ADP | `{curves['auc']:.5f} / {curves['ap']:.5f} / {curves['adp']:.5f}` |
-
-## Coverage Point
-
-{all_attack_lines}
-
-The coverage point is a ranked-list metric, not the fixed VELOX classifier threshold. `Coverage rank` is the first rank in the score-sorted analyst queue where every configured attack type has appeared at least once. `Prefix TP/FP` counts nodes up to that rank. `Tie-inclusive TP/FP/FN` evaluates all nodes with score at least the coverage score, which is more conservative when multiple nodes tie at the same score.
-
-## Source Commands
-
-Regenerate from inside the PIDSMaker container:
-
-```shell
-docker exec pidsmaker-pids python /home/artifacts/observations/shared_scripts/generate_velox_score_observation.py {dataset}
-```
-"""
-    (notes_dir / "observation.md").write_text(notes)
 
 
 def generate(dataset):
     run = RUNS[dataset]
+    input_dir = dataset_inputs(run["slug"])
     obs_dir = OBS_ROOT / run["obs_id"]
     (obs_dir / "plots").mkdir(parents=True, exist_ok=True)
     (obs_dir / "tables").mkdir(parents=True, exist_ok=True)
     setup_style()
-    score_path, result_path, stats_path, scores, labels, nodes, node2attacks, yhat, stats = load_run(run)
-    threshold_info = find_threshold(dataset, scores, yhat)
+    _score_path, _result_path, _stats_path, scores, labels, nodes, node2attacks, yhat, _stats = load_run(run)
+    threshold_info = find_threshold(dataset, scores, yhat, input_dir)
     metrics = confusion(labels, yhat)
     order = ranked_order(scores, nodes)
     all_attacks = find_all_attacks_cutoff(scores, labels, nodes, node2attacks, order)
@@ -714,27 +602,16 @@ def generate(dataset):
     plot_ranked(obs_dir, scores, labels, nodes, node2attacks, threshold_info, all_attacks, order)
     plot_all_attack_nodes(obs_dir, scores, nodes, node2attacks, threshold_info, all_attacks, order)
     plot_top_nodes(obs_dir, scores, labels, nodes, node2attacks, order, metadata)
-    score_stats = {
-        "all": quantile_row(scores),
-        "benign": quantile_row(scores[labels == 0]),
-        "malicious": quantile_row(scores[labels == 1]),
-    }
-    write_docs(
+    write_summary_metrics(
         obs_dir,
         dataset,
         run,
-        score_path,
-        result_path,
-        stats_path,
         metrics,
         threshold_info,
         all_attacks,
         {"auc": auc_value, "ap": ap_value, "adp": adp_value},
-        score_stats,
         labels,
         yhat,
-        nodes,
-        node2attacks,
     )
     print(obs_dir)
 
