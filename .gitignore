@@ -28,6 +28,10 @@ temp/
 *.tar.*
 *.zip
 
+# Self-contained regeneration inputs are tracked through Git LFS.
+!inputs/
+!inputs/**
+
 # Logs and runtime files
 *.log
 wandb/
