@@ -1,0 +1,86 @@
+{
+  "dataset": "THEIA_E3",
+  "schema_version": 1,
+  "selected_scores": {
+    "0": {
+      "path": "evaluation/evaluation/3f41b46f4375405d229d88485f466756cc1d3dde77a949ec0c604b3c5f098354/THEIA_E3/precision_recall_dir/scores_model_epoch_7.pkl",
+      "sha256": "b00d7159e25d380408d5d688087d406b641b86bb94854ddfd499f37580bdac0b",
+      "size": 43325769
+    },
+    "1": {
+      "path": "evaluation/evaluation/5eec968ead69a93f1d5986b993a22636b3a80b578d2d6fb09ac46dde15b23728/THEIA_E3/precision_recall_dir/scores_model_epoch_7.pkl",
+      "sha256": "0f93ffcb4fa8ae557b7bc8d55693c82023bc4dbdb96a2d7bead399fdb6e90cd4",
+      "size": 43496777
+    },
+    "2": {
+      "path": "evaluation/evaluation/ae7a653c84ba5a652316f20108b123ed39d0b3f6aae6ed25034226b8a456f2e5/THEIA_E3/precision_recall_dir/scores_model_epoch_5.pkl",
+      "sha256": "3864fe2f51cb177626902dcc793903f69d93df7423186dd6fda06f83f296c4ff",
+      "size": 43483081
+    },
+    "3": {
+      "path": "evaluation/evaluation/81f46e07fcf825710400c88e6e4e7a54019481835d9b307e48ad0271ca7468b4/THEIA_E3/precision_recall_dir/scores_model_epoch_3.pkl",
+      "sha256": "c1873b36c02c189a0b86592992eed032a94a33a30a91edd5fe944b07ea3d1b53",
+      "size": 43303305
+    },
+    "4": {
+      "path": "evaluation/evaluation/072e90f5a9da5f0feeb6e6fcbcf964a841daa2e42e9d1f75f3595872c7b5d090/THEIA_E3/precision_recall_dir/scores_model_epoch_11.pkl",
+      "sha256": "422453be99953dad0f3288bd5d3c01098b7cd1725ea371980eee27c406965b43",
+      "size": 43458251
+    }
+  },
+  "trees": {
+    "batching": {
+      "file_count": 5,
+      "total_bytes": 45
+    },
+    "cache": {
+      "file_count": 15,
+      "total_bytes": 101699
+    },
+    "construction": {
+      "file_count": 1209,
+      "total_bytes": 1824820121
+    },
+    "evaluation": {
+      "file_count": 45,
+      "total_bytes": 813433328
+    },
+    "feat_inference": {
+      "file_count": 6025,
+      "total_bytes": 53070090025
+    },
+    "featurization": {
+      "file_count": 20,
+      "total_bytes": 636746272
+    },
+    "matplotlib": {
+      "file_count": 1,
+      "total_bytes": 35159
+    },
+    "nltk_data": {
+      "file_count": 42,
+      "total_bytes": 51151074
+    },
+    "postprocessing": {
+      "file_count": 0,
+      "total_bytes": 0
+    },
+    "training": {
+      "file_count": 36950,
+      "total_bytes": 2064262459
+    },
+    "transformation": {
+      "file_count": 1205,
+      "total_bytes": 1486847397
+    },
+    "triage": {
+      "file_count": 0,
+      "total_bytes": 0
+    },
+    "wandb": {
+      "file_count": 97,
+      "total_bytes": 3158411
+    }
+  },
+  "variant": "no-leakage"
+}
