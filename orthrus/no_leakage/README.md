@@ -2,7 +2,7 @@
 
 This directory records the strict no-leakage Orthrus experiment and its
 five-seed THEIA E3 results. The implementation is maintained as normal Git
-history in <https://github.com/oanser-git/under-the-hood>.
+history in <https://github.com/oanser-git/PIDSMaker-Leakage-Control>.
 
 ## Experiment
 
@@ -32,7 +32,7 @@ used by these experiments.
 
 ```bash
 git clone --branch no-leakage \
-  https://github.com/oanser-git/under-the-hood.git ../PIDSMaker-no-leakage
+  https://github.com/oanser-git/PIDSMaker-Leakage-Control.git ../PIDSMaker-no-leakage
 export PIDSMAKER_SRC="$PWD/../PIDSMaker-no-leakage"
 ```
 
