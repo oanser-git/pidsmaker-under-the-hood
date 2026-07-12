@@ -21,6 +21,11 @@ def parse_args():
         type=Path,
         default=Path(os.environ.get("ORTHRUS_NO_LEAKAGE_ARTIFACTS", default_artifacts)),
     )
+    parser.add_argument(
+        "--compact",
+        action="store_true",
+        help="Verify selected checkpoints/scores/losses without requiring feat_inference.",
+    )
     return parser.parse_args()
 
 
@@ -62,19 +67,20 @@ def main():
     with inventory_path.open() as file:
         inventory = json.load(file)
 
-    actual_tree_names = {path.name for path in artifact_root.iterdir() if path.is_dir()}
-    expected_tree_names = set(inventory["trees"])
-    if actual_tree_names != expected_tree_names:
-        raise ValueError(
-            f"Artifact tree mismatch: {actual_tree_names} != {expected_tree_names}"
-        )
-    for tree_name, expected_stats in inventory["trees"].items():
-        actual_stats = tree_stats(artifact_root / tree_name)
-        if actual_stats != expected_stats:
+    if not args.compact:
+        actual_tree_names = {path.name for path in artifact_root.iterdir() if path.is_dir()}
+        expected_tree_names = set(inventory["trees"])
+        if actual_tree_names != expected_tree_names:
             raise ValueError(
-                f"Artifact inventory mismatch for {tree_name}: "
-                f"{actual_stats} != {expected_stats}"
+                f"Artifact tree mismatch: {actual_tree_names} != {expected_tree_names}"
             )
+        for tree_name, expected_stats in inventory["trees"].items():
+            actual_stats = tree_stats(artifact_root / tree_name)
+            if actual_stats != expected_stats:
+                raise ValueError(
+                    f"Artifact inventory mismatch for {tree_name}: "
+                    f"{actual_stats} != {expected_stats}"
+                )
 
     for seed in range(5):
         summary_path = summary_dir / f"seed-{seed}-test-summary.json"
@@ -116,7 +122,10 @@ def main():
             f"checkpoint_sha256={actual_sha256}"
         )
 
-    print("Artifact inventory and all five no-leakage Orthrus selections are valid.")
+    if args.compact:
+        print("All five compact no-leakage Orthrus selections are valid.")
+    else:
+        print("Artifact inventory and all five no-leakage Orthrus selections are valid.")
 
 
 if __name__ == "__main__":
