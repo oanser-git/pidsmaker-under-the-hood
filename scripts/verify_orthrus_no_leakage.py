@@ -9,7 +9,9 @@ from pathlib import Path
 
 def parse_args():
     repo_root = Path(__file__).resolve().parents[1]
-    default_artifacts = repo_root / "artifacts/orthrus/no_leakage/THEIA_E3/t5-5524660"
+    default_artifacts = (
+        repo_root / "artifacts/orthrus/no_leakage/THEIA_E3/t5-5524660/artifacts"
+    )
     parser = argparse.ArgumentParser(
         description="Verify the five strict no-leakage Orthrus artifact sets."
     )

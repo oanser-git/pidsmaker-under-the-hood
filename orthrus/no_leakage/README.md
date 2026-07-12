@@ -37,28 +37,32 @@ The materializer refuses to modify a dirty destination repository.
 
 ## Retrieve The Artifacts
 
-The checkpoints, scores, feature outputs, and edge losses occupy approximately
-56 GB and are not ordinary Git objects. Pull them directly from Iris after
-cloning this repository on the GPU machine:
+The checkpoints, scores, feature outputs, and edge losses occupy 59.96 GB when
+extracted. They are sealed into one 5.4 GB immutable object on Iris instead of
+being stored as 45,612 loose scratch files. Pull and extract it after cloning
+this repository on the GPU machine:
 
 ```bash
 ./scripts/sync_orthrus_no_leakage.sh
 python scripts/verify_orthrus_no_leakage.py
 ```
 
-The default local destination is
-`artifacts/orthrus/no_leakage/THEIA_E3/t5-5524660`. Override the SSH alias,
-remote source, or destination when needed:
+The default extracted artifact root is
+`artifacts/orthrus/no_leakage/THEIA_E3/t5-5524660/artifacts`. Override the SSH
+alias, remote object, or destination when needed:
 
 ```bash
 ORTHRUS_IRIS_REMOTE=user@access-iris.uni.lu \
-ORTHRUS_NO_LEAKAGE_SOURCE=/scratch/users/oanser/orthrus_t5/no_leakage/orthrus_no_leakage/THEIA_E3/artifacts \
+ORTHRUS_NO_LEAKAGE_OBJECT_SOURCE=/scratch/users/oanser/pidsmaker_objects/orthrus/no_leakage/THEIA_E3/orthrus-no-leakage-THEIA_E3-t5-5524660.tar.zst \
 ./scripts/sync_orthrus_no_leakage.sh /data/orthrus-no-leakage
 ```
 
 The destination is ignored by Git. The verification script checks each selected
 checkpoint and score SHA-256, non-empty selected validation/test edge-loss paths,
 and file counts and byte totals for every synchronized artifact tree.
+
+Object SHA-256:
+`5586ae6b032990f177590e1c19cf391ab3b002fa3e23a513fa409a2215f49407`.
 
 The historical Iris HPO launchers use a separate calibration wrapper. Set
 `CALIBRATION_SCRIPT` when using those launchers outside their original checkout.
