@@ -3,10 +3,10 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
-OBJECT_DIR="${ORTHRUS_OBJECT_DIR:-${REPO_ROOT}/artifacts/objects}"
+OBJECT_DIR="${ORTHRUS_OBJECT_DIR:-${REPO_ROOT}/artifacts/orthrus/objects/no_leakage/THEIA_E3}"
 DEFAULT_ARCHIVE="${OBJECT_DIR}/orthrus-no-leakage-THEIA_E3-t5-5524660.tar.zst"
 ARCHIVE="${1:-${ORTHRUS_NO_LEAKAGE_ARCHIVE:-${DEFAULT_ARCHIVE}}}"
-DESTINATION="${2:-${REPO_ROOT}/artifacts/orthrus/no_leakage/THEIA_E3/t5-5524660-compact}"
+DESTINATION="${2:-${REPO_ROOT}/artifacts/orthrus/extracted/no_leakage/THEIA_E3}"
 
 test -f "${ARCHIVE}" || {
   printf 'ERROR: archive not found: %s\n' "${ARCHIVE}" >&2
