@@ -31,9 +31,8 @@ The `no-leakage` branch is based on PIDSMaker commit
 used by these experiments.
 
 ```bash
-git clone --branch no-leakage \
-  https://github.com/oanser-git/PIDSMaker-Leakage-Control.git ../PIDSMaker-no-leakage
-export PIDSMAKER_SRC="$PWD/../PIDSMaker-no-leakage"
+git submodule update --init external/PIDSMaker
+export PIDSMAKER_SRC="$PWD/external/PIDSMaker"
 ```
 
 ## Retrieve The Artifacts

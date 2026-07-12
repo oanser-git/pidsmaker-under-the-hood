@@ -17,7 +17,7 @@ def add_pidsmaker_src():
         candidates.append(Path(root_env).expanduser() / "src")
     candidates.extend([
         Path("/home/src"),
-        repo_root() / "external" / "PIDSMaker" / "src",
+        repo_root() / "external" / "PIDSMaker",
     ])
 
     for path in candidates:
