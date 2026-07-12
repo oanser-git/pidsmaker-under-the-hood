@@ -1,8 +1,8 @@
 # Orthrus no-leakage
 
-This directory is the portable entry point for the strict no-leakage Orthrus
-implementation and its five-seed THEIA E3 results. It is intentionally separate
-from the as-is Orthrus implementation.
+This directory records the strict no-leakage Orthrus experiment and its
+five-seed THEIA E3 results. The implementation is maintained as normal Git
+history in <https://github.com/oanser-git/under-the-hood>.
 
 ## Experiment
 
@@ -23,17 +23,18 @@ minimum of `0.003`, maximum of `0.045`, and population standard deviation of
 Compact metrics are in `t5-5524660/results.csv`. The original W&B selection and
 frozen-test summaries are in `t5-5524660/summaries/`.
 
-## Materialize The Implementation
+## Get The Implementation
 
-The implementation is stored as a complete overlay against PIDSMaker commit
-`32602734bc9f896be5fc0f03f0a185c967cd6624`.
+The `no-leakage` branch is based on PIDSMaker commit
+`32602734bc9f896be5fc0f03f0a185c967cd6624`. Commit
+`88ca123a5b505c5609da9d806d368a0d2b9457f0` contains the strict implementation
+used by these experiments.
 
 ```bash
-./orthrus/no_leakage/implementation/materialize.sh ../PIDSMaker-orthrus-no-leakage
-export PIDSMAKER_SRC="$PWD/../PIDSMaker-orthrus-no-leakage"
+git clone --branch no-leakage \
+  https://github.com/oanser-git/under-the-hood.git ../PIDSMaker-no-leakage
+export PIDSMAKER_SRC="$PWD/../PIDSMaker-no-leakage"
 ```
-
-The materializer refuses to modify a dirty destination repository.
 
 ## Retrieve The Artifacts
 
